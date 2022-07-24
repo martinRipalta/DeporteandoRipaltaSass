@@ -1,0 +1,378 @@
+/* Diseño Html General */
+
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+
+*{padding: 0px; margin:0px;box-sizing: border-box;}
+
+body{background: rgb(245,243,246);
+    background: linear-gradient(90deg, rgba(245,243,246,1) 4%, rgba(241,196,15,1) 70%, rgba(243,156,18,1) 100%);
+    color: black;
+    font-family: sans-serif;} 
+
+.estiloGeneral{display: grid;grid-template-columns:repeat(4,0.25fr) ;grid-template-rows:0.1fr 2fr 0.5fr ;grid-template-areas:"header header header header" "main main main main" "footer footer footer footer";height: 100vh;}
+
+header{grid-area: header;}
+
+main{grid-area: main;}
+
+footer{grid-area: footer;}
+
+/*diseño Header*/
+
+.container-fluid .row nav .container-fluid {display: grid;grid-template-columns: 0.5fr 3fr 0.1fr;grid-template-areas: "img h1 desplegable";align-items: center;text-align: center;justify-content: space-between; background-color: #FF9702;border: 3px solid black}
+.container-fluid .row nav .container-fluid a img {width: 85%;grid-area: img;}
+.container-fluid .row nav .container-fluid h1 a {font-family:'Permanent Marker';color: black;text-align: center;justify-content: center;grid-area: h1;font-size:larger}
+.container-fluid .row nav .container-fluid .desplegable {grid-area: desplegable}
+.offcanvas-header h2 {color: black;font-size: 2rem;}
+.navbar-nav li a {color: black;font-size: 1rem;}
+#offcanvasNavbar {background: linear-gradient(360deg, rgba(245,243,246,1) 4%, rgba(241,196,15,1) 70%, rgba(243,156,18,1) 100%)}
+.dropdown-menu {background: linear-gradient(270deg, rgba(245,243,246,1) 4%, rgba(241,196,15,1) 70%, rgba(243,156,18,1) 100%);}
+.nav-item a {font-weight: bold;}
+
+/*diseño Footer */
+
+footer {display: grid; grid-template-columns: 0.5fr 1.5fr;grid-template-rows: 0.5fr 0.1fr;grid-template-areas: "footerArriba footerCentral" "footerAbajo footerAbajo";background-color: #FF9702;border:3px solid black ;}
+.footerArriba{grid-area: footerArriba;}
+.footerCentral {grid-area: footerCentral;}
+.footerAbajo {grid-area: footerAbajo;}
+.footerDerecha img {width:80%}
+.footerCentral {display: flex;flex-direction: column;justify-content: space-between;align-items: flex-start;row-gap: 1rem;}
+.footerSecciones h3 {text-align: center}
+.footerSecciones ul li {list-style:none; text-decoration: none;}
+.footerSecciones ul li a {list-style:none; text-decoration: none;color: black; font-weight: lighter;}
+.footerAbajo { display:flex;align-items: center;justify-content: center;margin-top: 10px;flex-direction: column;}
+
+
+.footerDescarga h3 {text-align: center}
+.footerCentral .footerDescarga h3{text-align: center;}
+.footerCentral .footerDescarga ul li {list-style:none; text-decoration: none;word-spacing: 2px;}
+.footerContacto h3 {text-align: center;}
+.footerCentral .footerContacto ul li {list-style:none; text-decoration: none;}
+.footerContacto ul li a{list-style:none; text-decoration: none;color: black; font-weight: lighter;}
+.footerContacto ul li a:hover{color: white;}
+.footerCentral .footerContacto .mail {margin-right: 5px; font-size: small;}
+
+/* diseño Main */
+
+.mainArriba img {width: 100%;}
+.formularioHome fieldset {border: 2px solid black}
+.formularioHome fieldset legend {font-size:x-small;color:beige;text-align: center;font-weight: bold;text-shadow: 1px 1px black;}
+.formularioHome fieldset div {font-size:xx-small;color: beige;text-align: left; font-weight: bold;text-shadow: 1px 1px black;}
+.formularioHome fieldset div img {width: 1rem;}
+.formularioHome fieldset div input {width: 4rem;font-size:smaller;}
+.formularioHome{position: relative;bottom: 110px;left: 287px;max-width: 12rem;max-height: 0.1rem;}
+
+.animate__shakeY h2 { text-align: center; word-spacing: 2px;font-size:2.8rem;margin: 50px;color:#D35400;text-shadow: 2px 2px black;}
+
+.seccionUnoHome {display: grid;grid-template-columns: 0.5fr 0.5fr;column-gap: 1.5rem;border-bottom: 5px solid #D35400;margin-bottom: 25px;row-gap: 2rem;margin-left: 10px;margin-right: 10px;}
+
+.seccionUnoHomeReduce {display: flex;flex-direction: column;row-gap: 0.5rem;justify-content: center;align-items: center;margin-left:15px ;}
+.seccionUnoHomeReduce img {width: 10%;justify-content: center;}
+.seccionUnoHomeReduce h3{text-align: center;}
+.seccionUnoHomeReduce p {text-align: center;width: 10rem;}
+
+.seccionUnoHomeFacil {display: flex;flex-direction: column;row-gap: 0.5rem;justify-content: center;align-items: center;margin-left:15px ;margin-bottom: 5px;}
+.seccionUnoHomeFacil img {width: 15%;justify-content: center;}
+.seccionUnoHomeFacil h3{text-align: center;}
+.seccionUnoHomeFacil p {text-align: center;width: 9.5rem;}
+
+.seccionUnoHomeEncontra {display: flex;flex-direction: column;row-gap: 0.5rem;justify-content: center;align-items: center;margin-left:15px ;}
+.seccionUnoHomeEncontra img {width: 10%;justify-content: center;}
+.seccionUnoHomeEncontra h3{text-align: center;}
+.seccionUnoHomeEncontra p {text-align: center;width:10rem;}
+
+.seccionUnoHomeArma {display: flex;flex-direction: column;row-gap:0.5rem;justify-content: center;align-items: center;margin-left:15px ;margin-bottom: 30px;}
+.seccionUnoHomeArma img {width: 10%;justify-content: center ;}
+.seccionUnoHomeArma h3{text-align: center;}
+.seccionUnoHomeArma p {text-align: center;width: 9.5rem;margin-top: 20px;}
+
+.mapaHome iframe{ width: 95%;margin-left: 15px;margin-right: 15px;}
+.seccionDosHome {display: flex;justify-content: center;flex-direction: column;}
+.seccionDosHome h2 {text-align: center;word-spacing: 2px;font-size:40px;margin: 15px;color:#D35400;text-shadow: 2px 2px black;}
+.seccionDosHome ol {display: flex;justify-content: center;align-items: center;flex-direction: column;margin: 20px;}
+.seccionDosHome ol li {font-weight:bold;}
+.seccionDosHome ol img {margin: 10px;}
+.seccionDosHome ol .seccionDosHomeBusca {display: flex;justify-content: center;align-items: center;flex-direction: column;}
+.seccionDosHome ol .seccionDosHomeBusca p {text-align: center;width: 20rem;font-size: 1rem;margin: 10px;}
+.seccionDosHome ol .seccionDosHomeReserva {display: flex;justify-content: center;align-items: center;flex-direction: column;}
+.seccionDosHome ol .seccionDosHomeReserva p {text-align: center;width: 20rem;font-size: 1rem;margin:10px}
+.seccionDosHome ol .seccionDosHomeJuega {display: flex;justify-content: center;align-items: center;flex-direction: column;}
+.seccionDosHome ol .seccionDosHomeJuega p {text-align: center;width: 20rem;font-size: 1rem;margin: 10px;}
+
+.seccionDosHomeJuega img {width: 5%;}
+
+/* Diseño Main Como Funciona */
+
+.funcionamientoEstablecimientoDeportivo h3 {text-align: center;margin: 10px;word-spacing: 2px;font-size:1.2rem;color:#D35400;text-shadow: 2px 2px black;font-weight: bold;}
+.funcionamientoEstablecimientoDeportivo ol {display: flex;justify-content:space-between;column-gap: 0.8rem;margin-left: 30px;margin-bottom: 30px;}
+.funcionamientoEstablecimientoDeportivo ol li {font-weight: bold;font-size: 0.8rem;text-shadow: 0.2px 0.2px grey;}
+.funcionamientoEstablecimientoDeportivo ol p{font-size: 0.8rem;}
+
+.funcionamientoEstablecimientoDeportivo .funcionamientoRegistra {display: flex;flex-direction: column;align-items: center;text-align: center;row-gap: 1rem;}
+
+.funcionamientoEstablecimientoDeportivo .funcionamientoRegistra p {width:6.5rem}
+
+
+.funcionamientoEstablecimientoDeportivo .funcionamientoCompleta {display: flex;flex-direction:column;align-items: center;text-align: center;row-gap: 1rem}
+
+.funcionamientoEstablecimientoDeportivo .funcionamientoCompleta p {width:7rem}
+
+.funcionamientoEstablecimientoDeportivo .funcionamientoDisfruta {display: flex;flex-direction: column;align-items: center;text-align: center;row-gap: 1rem}
+
+.funcionamientoEstablecimientoDeportivo .funcionamientoDisfruta p {width:10rem;margin-right: 5px;}
+.funcionamientoDisfruta img {width: 15%;}
+
+.funcionamientoDeportista h3 {text-align: center;margin: 10px;word-spacing: 2px;font-size:1.2rem;color:#D35400;text-shadow: 2px 2px black;font-weight: bold;}
+.funcionamientoDeportista ol {display: flex;justify-content:space-between;column-gap: 0.8rem;margin-left: 30px;margin-bottom: 30px;}
+
+.funcionamientoDeportista ol li {font-weight: bold;font-size: 0.8rem;text-shadow: 0.2px 0.2px grey;}
+.funcionamientoDeportista ol p{font-size: 0.8rem;}
+.funcionamientoDeportista .funcionamientoRegistra {display: flex;flex-direction: column;align-items: center;text-align: center;row-gap: 1rem;margin-left: 20px }
+.funcionamientoDeportista .funcionamientoRegistra p {width:6.5rem}
+
+.funcionamientoDeportista .funcionamientoBusca{display: flex;flex-direction: column;align-items: center;text-align: center;row-gap: 1rem;margin-left: 20px }
+
+.funcionamientoDeportista .funcionamientoBusca p{width:7rem;}
+
+.funcionamientoDeportista .funcionamientoDisfruta {display: flex;flex-direction: column;align-items: center;text-align: center;row-gap: 1rem}
+
+.funcionamientoDeportista .funcionamientoDisfruta p {width:10rem;margin-right: 5px;}
+.funcionamientoDeportista .funcionamientoDisfruta img {width: 9.8%;}
+
+/* Diseño Main Complejos Adheridos */
+
+.futbolCentral {text-align: center;margin-bottom: 10px;}
+.complejosInscriptosFutbol{display: flex;flex-direction: column;justify-content: center;align-items: center;}
+.imagenComplejo {width: 60%;border: 2px solid black;}
+.complejosInscriptosFutbol ul li {list-style: none;text-align: left;margin-left: 90px;}
+.complejosInscriptosFutbol .imagenTelefono {width: 5%;}
+.complejoInscriptoFutbolUno {display: flex;flex-direction: column;align-items: center;row-gap: 1rem; margin-top: 10px ;margin-bottom: 10px;}
+
+.complejoInscriptoFutbolDos {display: flex;flex-direction: column;align-items: center;row-gap: 1rem; margin-top: 10px ;margin-bottom: 10px}
+
+.complejoInscriptoFutbolTres {display: flex;flex-direction: column;align-items: center;row-gap: 1rem; margin-top: 10px ;margin-bottom: 10px}
+
+.tenisCentral {text-align: center;margin-bottom: 10px;margin-top: 50px;}
+.tenisCentral img {width:5%}
+.complejosInscriptosTenis {margin-bottom: 30px;display: flex;flex-direction: column;}
+.complejosInscriptosTenis .imagenTelefono {width: 5%;}
+
+.complejosInscriptosTenis ul li {list-style: none;text-align: left;margin-left: 90px;}
+
+.complejoInscriptoTenisUno{display: flex;flex-direction: column;justify-content: center; align-items: center;margin-top: 10px;margin-bottom: 10px;row-gap: 1rem;}
+
+.complejoInscriptoTenisDos {display: flex;flex-direction: column;justify-content: center; align-items: center;margin-top: 10px;margin-bottom: 10px;row-gap: 1rem;}
+
+.complejoInscriptoTenisTres{display: flex;flex-direction: column;justify-content: center; align-items: center;margin-top: 10px;margin-bottom: 10px;row-gap: 1rem;}
+
+.formularioInscripcion h3 {text-align: center;margin: 30px; word-spacing: 2px;font-size:1.5rem;color:#D35400;text-shadow: 2px 2px black;font-weight: bold;}
+
+.formularioInscripcion {margin: 5px;}
+.formularioInscripcion fieldset {border: 2px solid black}
+.formularioInscripcion fieldset legend {text-align: center;font-weight: bold;margin: 10px;text-shadow: 1px 1px grey;}
+.formularioInscripcion fieldset label {font-size:0.8rem;margin: 5px;text-align: center;align-items: center;text-align: center;font-weight: bold;margin: 10px;text-shadow: 0.5px 0.5px grey;}
+.formularioInscripcion fieldset input {margin-bottom: 3px;}
+
+.formularioInscripcion fieldset .botonesFormulario {margin: 10px;}
+
+/*Diseño Main Nosotros */
+
+.textoNosotros {text-align: center;word-spacing: 2px;font-size:1.2rem;margin: 30px;}
+
+.textoNosotros span {color:#D35400;text-shadow: 1px 1px black;;font-weight: bold;}
+.textoNosotros .deporteando{font-family:'Permanent Marker';color:black;}
+
+.deporteando{font-family:'Permanent Marker';color:black}
+
+.sloganNosotros {text-align: center;}
+.sloganNosotros h3 {margin-bottom: 30px;}
+.sloganNosotros img {width: 10%;margin-bottom: 10px;display: none;}
+
+/*Diseño Main Preg Frecuentes */
+
+
+.preguntas {display: grid; grid-template-columns:0.25fr 0.75fr;grid-template-rows: repeat(5,0.5fr);row-gap:1rem;;align-items:center;justify-items:center;margin-bottom: 10px;}
+
+.preguntas img {width:50%}
+.accordion-item .accordion-header .accordion-button {text-shadow: 1px 1px grey;text-align: center;justify-content: center; background: linear-gradient(90deg, rgba(245,243,246,1) 4%, rgba(241,196,15,1) 70%, rgba(243,156,18,1) 100%); font-weight: bold;text-decoration: none; color: black ;}
+
+.accordion-item .accordion-header .accordion-button:hover{color:black;}
+.accordion-item {background: linear-gradient(90deg, rgba(245,243,246,1) 4%, rgba(241,196,15,1) 70%, rgba(243,156,18,1) 100%);}
+
+.preguntasFrec .accordion-body li {list-style: none;}
+
+/* Media Queries */
+
+/* min width 600px */
+
+/* Header */ 
+@media screen and (min-width:600px) {header {display: grid;grid-template-columns: repeat(4, 1fr);grid-template-rows: repeat(2,0.5fr);grid-template-areas: "izquierdo izquierdo izquierdo izquierdo" "derecho derecho derecho derecho"} .encabezadoIzquierdo {grid-area: izquierdo;justify-content: center;} .encabezadoDerecho  {grid-area: derecho;justify-content: center;} .encabezadoDerecho .menu .nav {display: flex;flex-direction: row;align-items: center;justify-content: center;text-align: center;} .menu img {display: none;} .encabezadoDerecho .usuario {display: none;} .encabezadoDerecho .menu .nav li {padding: 20px; background-color: rgb(252, 157, 16); height: 60px;align-items: center;justify-content: center;text-align: center;border-radius: 100%;margin-bottom: 10px;margin:10px}}
+
+/* Footer */ 
+@media screen and (min-width:600px) {
+footer {display: grid;grid-template-columns: repeat(4,1fr); grid-template-rows:1fr 0.25fr;grid-template-areas: "logo central central central" "logo copy copy copy"}
+.footerArriba {grid-area:logo;} 
+.footerCentral{grid-area: central;}
+.footerCentral {display: flex;flex-direction: row;justify-content: space-between;}
+.footerAbajo {grid-area: copy;}
+.footerAbajo {text-align: center; justify-content: center; align-items: center;}
+.footerCentral .footerSecciones ul li {padding: 5px} 
+.footerCentral .footerDescarga ul li {padding: 5px}
+.footerCentral .footerContacto ul li {padding: 5px}}
+
+/*Main*/
+
+/* Main Home*/
+
+@media screen and (min-width:600px) {.formularioHome{position: relative;bottom: 155px;left: 370px;max-width: 14rem;max-height: 0.1rem;} 
+.formularioHome fieldset legend {font-size:smaller;color:beige;text-align: center;font-weight: bold;text-shadow: 1px 1px black;margin: 2px;}
+.formularioHome fieldset div {font-size:smaller;color: beige;text-align: left; font-weight: bold;text-shadow: 1px 1px black;margin: 2px;}
+.formularioHome fieldset div img {width: 8%;}
+.seccionUnoHome {display: flex; flex-direction: column;}
+.seccionUnoHome img {max-width: 5%;}
+.seccionUnoHomeArma {margin-bottom: 0px;}
+.seccionUnoHomeArma p {margin-top:0px;}
+
+.homePasos{display: grid;grid-template-columns: 1fr 0.5fr;grid-template-areas: "mapa seccionDos"}
+
+.homePasos .mapaHome {grid-area: mapa;}
+.homePasos .mapaHome iframe {width: 90%;}
+.homePasos .seccionDosHome {grid-area: seccionDos;justify-content: center;align-items: center;text-align: center;}
+
+/* Main Como Funciona */
+.funcionamientoEstablecimientoDeportivo ol {display: flex;flex-direction: column;}
+.funcionamientoEstablecimientoDeportivo ol img {margin: 10px;}
+.funcionamientoEstablecimientoDeportivo ol li {font-weight: bold;font-size: 1rem;text-shadow: 0.2px 0.2px grey;}
+.funcionamientoEstablecimientoDeportivo ol p{font-size: 1rem;margin: 5px;}
+.funcionamientoEstablecimientoDeportivo .funcionamientoRegistra p {width:20rem}
+.funcionamientoEstablecimientoDeportivo .funcionamientoRegistra img {width: 5%;}
+
+.funcionamientoEstablecimientoDeportivo .funcionamientoCompleta p {width:20rem}
+
+.funcionamientoEstablecimientoDeportivo .funcionamientoCompleta img {width:5%}
+
+.funcionamientoEstablecimientoDeportivo .funcionamientoDisfruta p {width:20rem}
+.funcionamientoEstablecimientoDeportivo .funcionamientoDisfruta img {width:7%}
+
+.funcionamientoDeportista ol {display: flex;flex-direction: column;text-align: center;justify-content: center;}
+
+.funcionamientoDeportista ol img {margin: 10px;}
+
+.funcionamientoDeportista ol li {font-weight: bold;font-size: 1rem;text-shadow: 0.2px 0.2px grey;}
+.funcionamientoDeportista ol p{font-size: 1rem;margin: 5px;}
+.funcionamientoDeportista .funcionamientoRegistra p {width:20rem}
+.funcionamientoDeportista .funcionamientoRegistra img {width: 5%;}
+
+.funcionamientoDeportista .funcionamientoBusca p {width:20rem}
+
+.funcionamientoDeportista .funcionamientoBusca img {width:5%}
+
+.funcionamientoDeportista .funcionamientoDisfruta p {width:20rem}
+.funcionamientoDeportista .funcionamientoDisfruta img {width:7%}
+
+/* Main Complejos Adheridos */
+
+.complejosInscriptosFutbol {flex-direction: row;}
+.complejosInscriptosFutbol ul li {list-style: none;text-align: left;margin-left: 30px;}
+
+.complejosInscriptosFutbol ul li .imagenTelefono {width: 9%;}
+.complejosInscriptosFutbol ul li img {width: 10%;}
+
+.complejosInscriptosTenis {flex-direction: row;}
+
+.complejosInscriptosTenis ul li {list-style: none;text-align: left;margin-left: 30px;}
+
+.complejosInscriptosTenis ul li .imagenTelefono {width: 9%;}
+.complejosInscriptosTenis ul li img {width: 10%;}
+/* Main Nosotros */
+
+.sloganNosotros img {width: 80%;margin-bottom: 10px;display: inline-block;}
+
+/* Main Preguntas Frecuentes */
+
+.preguntas {display:flex;flex-direction: column}
+.preguntas img {width:5%}
+
+
+
+
+
+}
+
+
+/*Media Queries min width 1200px */
+
+/*Header */
+
+@media screen and (min-width:1200px) {#offcanvasNavbarDropdown:hover {color:white}
+#menuInicio:hover {color: white;}}
+
+/*Main*/
+
+@media screen and (min-width:1200px) {.formularioHome{position: relative;bottom: 220px;left: 810px;max-width: 25rem;max-height: 3rem;} 
+.formularioHome fieldset legend {font-size:larger;color:beige;text-align: center;font-weight: bold;text-shadow: 1px 1px black;margin: 5px;}
+.formularioHome fieldset div {font-size:larger;color: beige;text-align: left; font-weight: bold;text-shadow: 1px 1px black;margin: 5px;} 
+.formularioHome fieldset div img {width: 5%;}
+.formularioHome fieldset div input {width: 7rem;font-size:small;}
+
+.seccionUnoHome {flex-direction: row; justify-content: space-around;border-bottom: none;margin-bottom: 40px;}
+.seccionUnoHome img  {max-width: 100%;}
+.seccionUnoHomeReduce p {width: 15rem;}
+.seccionUnoHomeFacil {margin-bottom: 10px;}
+.seccionUnoHomeFacil p {width:15rem}
+.seccionUnoHomeEncontra {margin-top:0px ;}
+.seccionUnoHomeEncontra p {width: 18rem}
+.seccionUnoHomeArma p{width: 17rem;}
+.seccionUnoHomeArma {margin-bottom: 20px;}
+
+/*Main Como Funciona */
+
+.funcionamientoEstablecimientoDeportivo ol {display: grid;grid-template-columns: repeat(2,1fr);grid-template-rows: repeat(2,1fr);grid-template-areas: "funcionamientoRegistra funcionamientoCompleta" "funcionamientoDisfrutar funcionamientoDisfrutar";}
+.funcionamientoEstablecimientoDeportivo .funcionamientoRegistra {grid-area: funcionamientoRegistra;}
+.funcionamientoEstablecimientoDeportivo .funcionamientoRegistra img {width: 8%;}
+.funcionamientoEstablecimientoDeportivo .funcionamientoRegistra p {width: 30rem;}
+.funcionamientoEstablecimientoDeportivo .funcionamientoCompleta {grid-area: funcionamientoCompleta;}
+.funcionamientoEstablecimientoDeportivo .funcionamientoCompleta img {width: 8%;}
+.funcionamientoEstablecimientoDeportivo .funcionamientoCompleta p {width: 30rem}
+.funcionamientoEstablecimientoDeportivo .funcionamientoDisfruta {grid-area: funcionamientoDisfrutar;}
+.funcionamientoEstablecimientoDeportivo .funcionamientoDisfruta img{width: 5%;}
+.funcionamientoEstablecimientoDeportivo .funcionamientoDisfruta p {width: 30rem;text-align: center;}
+.funcionamientoEstablecimientoDeportivo h3 {font-size:2rem}
+
+.funcionamientoDeportista ol {display: grid;grid-template-columns: repeat(2,1fr);grid-template-rows: repeat(2,1fr);grid-template-areas: "funcionamientoRegistra funcionamientoCompleta" "funcionamientoDisfrutar funcionamientoDisfrutar";}
+.funcionamientoDeportista .funcionamientoRegistra {grid-area: funcionamientoRegistra;}
+.funcionamientoDeportista .funcionamientoRegistra img {width: 8%;}
+.funcionamientoDeportista .funcionamientoRegistra p {width: 30rem;}
+.funcionamientoDeportista .funcionamientoBusca {grid-area: funcionamientoCompleta;}
+.funcionamientoDeportista .funcionamientoBusca img {width: 6%;}
+.funcionamientoDeportista .funcionamientoBusca p {width: 30rem}
+.funcionamientoDeportista .funcionamientoDisfruta {grid-area: funcionamientoDisfrutar;}
+.funcionamientoDeportista .funcionamientoDisfruta img{width: 4%;}
+.funcionamientoDeportista .funcionamientoDisfruta p {width: 30rem;text-align: center;}
+.funcionamientoDeportista h3 {font-size:2rem}
+
+.mainPregunta h2 {font-size:3.5rem}
+
+/* Main Complejos Adheridos */
+
+.formularioInscripcion h3 {font-size:2.3rem;}
+
+.formularioInscripcion fieldset legend {font-size: 1.5rem;margin: 5px;}
+.formularioInscripcion fieldset label {font-size:1rem;}
+.formularioInscripcion fieldset input {margin-bottom: 3px;}
+
+.formularioInscripcion fieldset .botonesFormulario {margin: 10px;}
+
+.complejosInscriptosFutbol ul li {margin-left: 90px;}
+.complejosInscriptosTenis ul li {margin-left: 90px;}
+}
+
+/* Footer */
+
+@media screen and (min-width:1200px) { .footerSecciones ul li a:hover{color: white;} }
+
+
+
+
+
+
