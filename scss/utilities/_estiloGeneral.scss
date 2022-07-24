@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+
+*{padding: 0px; margin:0px;box-sizing: border-box;}
+
+body {
+    background: linear-gradient(90deg, rgba(245,243,246,1) 4%, rgba(241,196,15,1) 70%, rgba(243,156,18,1) 100%);
+    color: black;
+    font-family: sans-serif;
+    .estiloGeneral
+     {display: grid;grid-template-columns:repeat(4,0.25fr) ;grid-template-rows:0.1fr 2fr 0.5fr ;grid-template-areas:"header header header header" "main main main main" "footer footer footer footer";height: 100vh;
+       header{grid-area:header;.row{
+         nav{
+             .container-fluid{display: grid;grid-template-columns: 0.5fr 3fr 0.1fr;grid-template-areas: "img h1 desplegable";align-items: center;text-align: center;justify-content: space-between; background-color: #FF9702;border: 3px solid black;
+                 a{
+                     img{width: 85%;grid-area: img;}
+                    };
+                 h1{
+                     a{font-family:'Permanent Marker';color: black;text-align: center;justify-content: center;grid-area: h1;font-size:larger}
+                    };
+                 .desplegable{
+                     grid-area: desplegable;
+                     #offcanvasNavbar {
+                         .offcanvas-header{
+                             h2{color: black;font-size: 2rem;}
+                         };
+                         .offcanvas-body{
+                            .navbar-nav{
+                                .nav-item{
+                                    a{color: black;font-size: 1rem;font-weight: bold;}
+                                }
+                             .dropdown{
+                                 .dropdown-menu{background: linear-gradient(270deg, rgba(245,243,246,1) 4%, rgba(241,196,15,1) 70%, rgba(243,156,18,1) 100%);}
+                                }
+                            }
+                        };
+                        background: linear-gradient(360deg, rgba(245,243,246,1) 4%, rgba(241,196,15,1) 70%, rgba(243,156,18,1) 100%)
+                    }}}}}};
+       main{grid-area:main};footer{
+        grid-area: footer; display: grid; grid-template-columns: 0.5fr 1.5fr;grid-template-rows: 0.5fr 0.1fr;grid-template-areas: "footerDerecha footerCentral" "footerAbajo footerAbajo";background-color: #FF9702;border:3px solid black ;
+        .footerDerecha{grid-area: footerDerecha;
+            img{width:80%}
+        };
+        .footerCentral{grid-area: footerCentral;
+            display: flex;flex-direction: column;justify-content: space-between;align-items: flex-start;row-gap: 1rem;
+            .footerSecciones{
+                h3{
+                    text-align: center;};
+             ul{
+                li{
+                    list-style:none; text-decoration: none;
+                 a{
+                    list-style:none; text-decoration: none;color: black; font-weight: lighter;}}
+             }};
+            .footerDescarga{
+             h3{text-align: center;};
+             ul{
+                li{list-style:none; text-decoration: none;word-spacing: 2px;}
+             }};
+          .footerContacto{
+                h3{text-align: center;};
+                ul{
+                    li{
+                        list-style:none; text-decoration: none;a{
+                            list-style:none; text-decoration: none;color: black; font-weight: lighter;};
+                            a:hover{
+                                color: white;}};
+                    .mail{
+                        margin-right: 5px; font-size: small;}
+                }
+             }};
+        .footerAbajo{ grid-area:footerAbajo;display:flex;align-items: center;justify-content: center;margin-top: 10px;flex-direction: column;
+        }}
+        @media screen and (min-width:600px) {
+            footer {
+                display: grid;grid-template-columns: repeat(4,1fr); grid-template-rows:1fr 0.25fr;grid-template-areas: "logo centro centro centro" "logo abajo abajo abajo";
+                .footerDerecha {grid-area:logo;};
+                .footerCentral{
+                    grid-area: centro;display: flex;flex-direction: row;justify-content: space-between;
+                    .footerSecciones{
+                        ul{
+                            li{padding: 5px}}};
+                    .footerDescarga{
+                        ul{
+                            li{padding: 5px}}};
+                    .footerContacto{
+                        ul{
+                            li{
+                                padding: 5px}}}};
+              .footerAbajo{grid-area:abajo}}}
+        
+        @media screen and (min-width:1200px) {
+             footer { 
+                .footerCentral{
+                    .footerSecciones{
+                        ul{
+                            li{
+                                a:hover{color: white}}}}}}}
+    }};
+ 
