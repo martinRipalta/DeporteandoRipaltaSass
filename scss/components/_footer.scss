@@ -1,4 +1,5 @@
-@import "../scss/base/variables";
+@import "../base/variables";
+@import "../base/mixin";
 footer{
     grid-area: footer; display: grid; grid-template-columns: 0.5fr 1.5fr;grid-template-rows: 0.5fr 0.1fr;grid-template-areas: "footerDerecha footerCentral" "footerAbajo footerAbajo";background-color:$colorPrincipal;border:3px solid black ;
     .footerDerecha{
@@ -35,7 +36,7 @@ footer{
             }
          }
     };
-    .footerAbajo{ grid-area:footerAbajo;display:flex;align-items: center;justify-content: center;margin-top: 10px;flex-direction: column;
+    .footerAbajo{ grid-area:footerAbajo;@include flexColumn;margin-top: 10px;
     }}
 
     @media screen and (min-width:600px) {

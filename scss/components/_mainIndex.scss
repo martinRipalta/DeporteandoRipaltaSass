@@ -1,9 +1,9 @@
-@import"../scss/base/variables";
+@import"../base/variables";
 main {
  .mainArriba{
      img{
          width:$medidaImagenesPrincipales
-        };
+        }};
      .formularioHome{
          fieldset{
              border: 2px solid black;
@@ -17,8 +17,11 @@ main {
                input{
                 width: 4rem;font-size:smaller;}}
             };
-         position: relative;bottom: 110px;left: 287px;max-width: 12rem;max-height: 0.1rem;};
- .animate__shakeY{h2{text-align: center; word-spacing: 2px;font-size:2.8rem;margin: 50px;color:$colorLetras;text-shadow: 2px 2px black;}};
+         position: relative;bottom: 110px;left: 280px;max-width: 12rem;max-height: 0.1rem;
+        };
+ .animate__shakeY{
+     h2{text-align: center; word-spacing: 2px;font-size:2.8rem;margin: 50px;color:$colorLetras;text-shadow: 2px 2px black;}
+    };
  .seccionUnoHome{
      display: grid;grid-template-columns: 0.5fr 0.5fr;column-gap: 1.5rem;border-bottom: 5px solid $colorLetras;margin-bottom: 25px;row-gap: 2rem;margin-left: 10px;margin-right: 10px;
      .seccionUnoHomeReduce {
@@ -48,12 +51,12 @@ main {
          p {text-align: center;width: 20rem;font-size: 1rem;margin: 10px;}
          }
          .seccionDosHomeReserva {display: flex;justify-content: center;align-items: center;flex-direction: column;p {text-align: center;width: 20rem;font-size: 1rem;margin:10px}}
-         .seccionDosHomeJuega {display: flex;justify-content: center;align-items: center;flex-direction: column;p {text-align: center;width: 20rem;font-size: 1rem;margin: 10px;};img{width: 5%}}}}}}};
-@media screen and (min-width:600px)
+         .seccionDosHomeJuega {display: flex;justify-content: center;align-items: center;flex-direction: column;p {text-align: center;width: 20rem;font-size: 1rem;margin: 10px;};img{width: 5%}}}}}};
+@media screen and (min-width:600px) and (max-width:1200px)
 {main
    {
      .formularioHome{
-          position: relative;bottom: 155px;left: 370px;max-width: 14rem;max-height: 0.1rem;
+          position: relative;bottom: 155px;left: 360px;max-width: 14rem;max-height: 0.1rem;
              fieldset{
              legend{
                  font-size:smaller;color:beige;text-align: center;font-weight: bold;text-shadow: 1px 1px black;margin: 2px;

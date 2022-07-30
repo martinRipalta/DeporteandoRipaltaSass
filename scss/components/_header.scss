@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
 
-@import"../scss/base/variables";
+@import"../base/variables";
 
 header{grid-area:header;background: linear-gradient(360deg, $colorFondoUno 4%, $colorFondoDos 70%, $colorFondoTres 100%);
     .row{
@@ -15,7 +15,9 @@ header{grid-area:header;background: linear-gradient(360deg, $colorFondoUno 4%, $
                     };
                   .desplegable{
                       grid-area: desplegable;
-                      #offcanvasNavbar {
+                      #offcanvasNavbar
+                        {
+                         background: linear-gradient(270deg, $colorFondoUno 4%, $colorFondoDos 70%, $colorFondoTres 100%);
                           .offcanvas-header{
                              h2{
                                 color: black;font-size: 2rem;}

@@ -1,0 +1,71 @@
+@import"../base/variables";
+@import "../base/mixin";
+
+main
+{
+ .mainArriba
+   {
+      img
+        {
+         width:$medidaImagenesPrincipales
+        }
+    };
+ .funcionamientoEstablecimientoDeportivo
+    {
+     h3 {
+         text-align: center;margin: 10px;word-spacing: 2px;font-size:1.2rem;color:$colorLetras;text-shadow: 1px 1px black;font-weight: bold;
+        };
+      ol 
+       {
+         display: flex;  justify-content:space-between;column-gap: 0.8rem;margin-left: 20px;margin-bottom: 30px; li{
+         font-weight: bold;font-size: 0.8rem;text-shadow: 0.2px 0.2px grey;};p{font-size: 0.8rem;}
+        };
+     .funcionamientoRegistra 
+        {
+         @include flexColumn;row-gap: 1rem;p {width:6.5rem}
+        };
+        .funcionamientoCompleta {
+            @include flexColumn;row-gap: 1rem;p {width:7rem}
+        }
+      .funcionamientoDisfruta {
+         @include flexColumn;row-gap: 1rem; p {width:6.5rem;margin-right: 5px;};img {width: 15%;}
+        }
+    }
+  .funcionamientoDeportista{ 
+       h3 {
+         text-align: center;margin: 10px;word-spacing: 2px;font-size:1.2rem;color:$colorLetras;text-shadow: 1px 1px black;font-weight: bold;
+        };
+      ol {
+         display: flex;justify-content:space-between;column-gap: 0.8rem;margin-left: 30px;margin-bottom: 30px;
+         li {
+             font-weight: bold;font-size: 0.8rem;text-shadow: 0.2px 0.2px grey;
+            };
+         p{font-size: 0.8rem;}
+        };
+     .funcionamientoRegistra {
+         @include flexColumn;row-gap: 1rem;margin-left: 5px; p {width:6.5rem}
+        }
+      .funcionamientoBusca{
+         @include flexColumn;row-gap: 1rem;margin-left: 20px; p{width:7rem;}
+        }
+      .funcionamientoDisfruta {
+         @include flexColumn;row-gap: 1rem;p {width:10rem;margin-right: 5px;}
+         ;img {width: 9.8%;}
+        }
+    }
+};
+
+@media screen and (min-width:600px) {
+ main{
+    .funcionamientoEstablecimientoDeportivo{
+     ol {display: flex;flex-direction: column; img {margin: 10px;};li {font-weight: bold;font-size: 1rem;text-shadow: 0.2px 0.2px grey;}; p{font-size: 1rem;margin: 5px;}};
+      .funcionamientoRegistra{ p {width:20rem};img {width: 5%;}};.funcionamientoCompleta{ p {width:20rem}; img {width:5%}};.funcionamientoDisfruta{ p {width:20rem}; img {width:7%}}
+    };
+  .funcionamientoDeportista{ 
+     ol {display: flex;flex-direction: column;text-align: center;justify-content: center; img {margin: 10px;};li {font-weight: bold;font-size: 1rem;text-shadow: 0.2px 0.2px grey;} p{font-size: 1rem;margin: 5px;}}; .funcionamientoRegistra{ p {width:20rem};img {width: 5%;}};.funcionamientoBusca{ p {width:20rem}; img {width:5%}};.funcionamientoDisfruta{p {width:20rem}; img {width:7%}}
+   }}
+};
+@media screen and (min-width:1200px) {
+ main
+    {
+     .funcionamientoEstablecimientoDeportivo {ol {display: grid;grid-template-columns: repeat(2,1fr);grid-template-rows: repeat(2,1fr);grid-template-areas: "funcionamientoRegistra funcionamientoCompleta" "funcionamientoDisfrutar funcionamientoDisfrutar";}};.funcionamientoRegistra {grid-area: funcionamientoRegistra; img {width: 8%;} p {width: 30rem;}};.funcionamientoCompleta {grid-area: funcionamientoCompleta;img {width: 8%;};p {width: 30rem}};.funcionamientoDisfruta {grid-area: funcionamientoDisfrutar; img{width: 5%;} p {width: 30rem;text-align: center;}}; h3 {font-size:2rem};.funcionamientoDeportista{ ol {display: grid;grid-template-columns: repeat(2,1fr);grid-template-rows: repeat(2,1fr);grid-template-areas: "funcionamientoRegistra funcionamientoCompleta" "funcionamientoDisfrutar funcionamientoDisfrutar";};.funcionamientoRegistra {grid-area: funcionamientoRegistra;img {width: 8%; p {width: 30rem;}}};.funcionamientoBusca {grid-area: funcionamientoCompleta; img {width: 6%;};p {width: 30rem}};.funcionamientoDisfruta {grid-area: funcionamientoDisfrutar; img{width: 4%;}; p {width: 30rem;text-align: center;}}};h3 {font-size:2rem}}}
