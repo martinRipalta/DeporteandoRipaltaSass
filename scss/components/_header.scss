@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+
+@import"../scss/base/variables";
+
+header{grid-area:header;background: linear-gradient(360deg, $colorFondoUno 4%, $colorFondoDos 70%, $colorFondoTres 100%);
+    .row{
+        nav{
+             .container-fluid{
+                 display: grid;grid-template-columns: 0.5fr 3fr 0.1fr;grid-template-areas: "img h1 desplegable";align-items: center;text-align: center;justify-content: space-between; background-color: $colorPrincipal;border: 3px solid black;
+                 a{
+                     img{width: 85%;grid-area: img;}
+                   };
+                 h1{
+                     a{font-family:'Permanent Marker';color: black;text-align: center;justify-content: center;grid-area: h1;font-size:larger}
+                    };
+                  .desplegable{
+                      grid-area: desplegable;
+                      #offcanvasNavbar {
+                          .offcanvas-header{
+                             h2{
+                                color: black;font-size: 2rem;}
+                            };
+                          .offcanvas-body{
+                               .navbar-nav{
+                                 .nav-item{
+                                     a{color: black;font-size: 1rem;font-weight: bold;}
+                                     }
+                                 .dropdown{
+                                     .dropdown-menu{background: linear-gradient(270deg, $colorFondoUno 4%, $colorFondoDos 70%, $colorFondoTres 100%);}
+                                    }
+                                }
+                            }}}}}}}
