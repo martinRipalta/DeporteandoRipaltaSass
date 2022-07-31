@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+@import "../base/variables";
+@import "../base/mixin";
+
+main
+{
+ .mainArriba
+   {
+      img
+        {
+         width:$medidaImagenesPrincipales
+        }
+    };
+ .textoNosotros{
+     p{text-align: center;word-spacing: 2px;font-size:1.2rem;margin: 30px;}
+     span {color:$colorLetras;text-shadow: 1px 1px black;;font-weight: bold;};
+     .deporteando {font-family:'Permanent Marker';color:black;text-shadow: 1px 1px white}
+    };
+ .sloganNosotros {text-align: center; h3{margin-bottom: 30px;.deporteando{font-family:'Permanent Marker';color:black}};img{width: 10%;margin-bottom: 10px;display: none;}}
+}
+@media screen and (min-width:600px)
+{main{
+.sloganNosotros{ img {width: 80%;margin-bottom: 10px;display: inline-block;}}}}
