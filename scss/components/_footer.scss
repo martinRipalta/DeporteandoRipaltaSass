@@ -1,7 +1,10 @@
 @import "../base/variables";
 @import "../base/mixin";
+@import "../base/maps";
+@import "../base/extend";
+
 footer{
-    grid-area: footer; display: grid; grid-template-columns: 0.5fr 1.5fr;grid-template-rows: 0.5fr 0.1fr;grid-template-areas: "footerDerecha footerCentral" "footerAbajo footerAbajo";background-color:$colorPrincipal;border:3px solid black ;
+    grid-area: footer; display: grid; grid-template-columns: 0.5fr 1.5fr;grid-template-rows: 0.5fr 0.1fr;grid-template-areas: "footerDerecha footerCentral" "footerAbajo footerAbajo";background-color:$colorPrincipal;@extend %diseñoBordes;
     .footerDerecha{
         grid-area: footerDerecha;
         img{width:80%}
@@ -14,21 +17,21 @@ footer{
             };
          ul{
              li{
-                list-style:none; text-decoration: none;
+                list-style:map-get($map: $diseñoEstandar, $key:subrayado ); text-decoration:map-get($map: $diseñoEstandar, $key:subrayado );
              a{
-                list-style:none; text-decoration: none;color: black; font-weight: lighter;}}
+                list-style:map-get($map: $diseñoEstandar, $key:subrayado ); text-decoration: map-get($map: $diseñoEstandar, $key:subrayado );color: map-get($map: $diseñoEstandar, $key:colorEstandar); font-weight: lighter;}}
          }};
         .footerDescarga{
          h3{text-align: center;};
          ul{
-            li{list-style:none; text-decoration: none;word-spacing: 2px;}
+            li{list-style:map-get($map: $diseñoEstandar, $key:subrayado ); text-decoration: map-get($map: $diseñoEstandar, $key:subrayado );word-spacing: 2px;}
          }};
       .footerContacto{
             h3{text-align: center;};
             ul{
                 li{
-                    list-style:none; text-decoration: none;a{
-                        list-style:none; text-decoration: none;color: black; font-weight: lighter;};
+                    list-style:map-get($map: $diseñoEstandar, $key:subrayado ); text-decoration: map-get($map: $diseñoEstandar, $key:subrayado );a{
+                        list-style:map-get($map: $diseñoEstandar, $key:subrayado ); text-decoration: map-get($map: $diseñoEstandar, $key:subrayado );color: map-get($map: $diseñoEstandar, $key:colorEstandar ); font-weight: lighter;};
                         a:hover{
                             color: white;}};
                 .mail{

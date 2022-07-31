@@ -1,8 +1,13 @@
+@import "../base/variables";
+@import "../base/maps";
+@import "../base/mixin";
+@import "../base/extend";
+
 *{padding: 0px; margin:0px;box-sizing: border-box;};
 
 body {
-    background: linear-gradient(90deg, rgba(245,243,246,1) 4%, rgba(241,196,15,1) 70%, rgba(243,156,18,1) 100%);
-    color: black;
+    background: linear-gradient(90deg, $colorFondoUno 4%,$colorFondoDos 70%,$colorFondoTres 100%);
+    color: map-get($map: $letrasGrosorSombra, $key: colorEstandar );
     font-family: sans-serif;
     .estiloGeneral{
         display: grid;grid-template-columns:repeat(4,0.25fr) ;grid-template-rows:0.1fr 2fr 0.5fr ;grid-template-areas:"header header header header" "main main main main" "footer footer footer footer";height: 100vh;

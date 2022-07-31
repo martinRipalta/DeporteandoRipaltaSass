@@ -1,17 +1,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
 
 @import"../base/variables";
+@import "../base/maps";
+@import "../base/extend";
 
 header{grid-area:header;background: linear-gradient(360deg, $colorFondoUno 4%, $colorFondoDos 70%, $colorFondoTres 100%);
     .row{
         nav{
              .container-fluid{
-                 display: grid;grid-template-columns: 0.5fr 3fr 0.1fr;grid-template-areas: "img h1 desplegable";align-items: center;text-align: center;justify-content: space-between; background-color: $colorPrincipal;border: 3px solid black;
+                 display: grid;grid-template-columns: 0.5fr 3fr 0.1fr;grid-template-areas: "img h1 desplegable";align-items: center;text-align: center;justify-content: space-between; background-color: $colorPrincipal;@extend %diseñoBordes;
                  a{
                      img{width: 85%;grid-area: img;}
                    };
                  h1{
-                     a{font-family:'Permanent Marker';color: black;text-align: center;justify-content: center;grid-area: h1;font-size:larger}
+                     a{font-family:'Permanent Marker'; color: map-get($map: $diseñoEstandar, $key:colorEstandar )
+                     ;text-align: center;justify-content: center;grid-area: h1;font-size:larger}
                     };
                   .desplegable{
                       grid-area: desplegable;
@@ -20,12 +23,12 @@ header{grid-area:header;background: linear-gradient(360deg, $colorFondoUno 4%, $
                          background: linear-gradient(270deg, $colorFondoUno 4%, $colorFondoDos 70%, $colorFondoTres 100%);
                           .offcanvas-header{
                              h2{
-                                color: black;font-size: 2rem;}
+                                color:map-get($map: $diseñoEstandar, $key:colorEstandar );font-size: 2rem;}
                             };
                           .offcanvas-body{
                                .navbar-nav{
                                  .nav-item{
-                                     a{color: black;font-size: 1rem;font-weight: bold;}
+                                     a{color: map-get($map: $diseñoEstandar, $key:colorEstandar );font-size: 1rem;font-weight:2px;}
                                      }
                                  .dropdown{
                                      .dropdown-menu{background: linear-gradient(270deg, $colorFondoUno 4%, $colorFondoDos 70%, $colorFondoTres 100%);}

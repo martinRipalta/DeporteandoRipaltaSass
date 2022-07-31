@@ -1,6 +1,7 @@
 @import"../base/variables";
 @import "../base/mixin";
-
+@import "../base/maps";
+@import "../base/extend";
 main
 {
  .mainArriba
@@ -13,12 +14,12 @@ main
  .funcionamientoEstablecimientoDeportivo
     {
      h3 {
-         text-align: center;margin: 10px;word-spacing: 2px;font-size:1.2rem;color:$colorLetras;text-shadow: 1px 1px black;font-weight: bold;
+         text-align: center;margin: 10px;word-spacing: 2px;font-size:1.2rem;color:$colorLetras;text-shadow: 1px 1px map-get($map: $diseñoEstandar, $key:colorEstandar );font-weight: map-get($map: $diseñoEstandar, $key:grosor );
         };
       ol 
        {
          display: flex;  justify-content:space-between;column-gap: 0.8rem;margin-left: 20px;margin-bottom: 30px; li{
-         font-weight: bold;font-size: 0.8rem;text-shadow: 0.2px 0.2px grey;};p{font-size: 0.8rem;}
+          font-weight: map-get($map: $diseñoEstandar, $key:grosor );font-size: 0.8rem;text-shadow: 0.2px 0.2px map-get($map: $diseñoEstandar, $key:colorPrincipal );};p{font-size: 0.8rem;}
         };
      .funcionamientoRegistra 
         {
@@ -33,12 +34,12 @@ main
     }
   .funcionamientoDeportista{ 
        h3 {
-         text-align: center;margin: 10px;word-spacing: 2px;font-size:1.2rem;color:$colorLetras;text-shadow: 1px 1px black;font-weight: bold;
+         text-align: center;margin: 10px;word-spacing: 2px;font-size:1.2rem;color:$colorLetras;text-shadow: 1px 1px map-get($map: $diseñoEstandar, $key:colorEstandar );font-weight: map-get($map: $diseñoEstandar, $key:grosor );
         };
       ol {
          display: flex;justify-content:space-between;column-gap: 0.8rem;margin-left: 30px;margin-bottom: 30px;
          li {
-             font-weight: bold;font-size: 0.8rem;text-shadow: 0.2px 0.2px grey;
+             font-weight: map-get($map: $diseñoEstandar, $key:grosor );font-size: 0.8rem;text-shadow: 0.2px 0.2px grey;
             };
          p{font-size: 0.8rem;}
         };
@@ -58,11 +59,11 @@ main
 @media screen and (min-width:600px) {
  main{
     .funcionamientoEstablecimientoDeportivo{
-     ol {display: flex;flex-direction: column; img {margin: 10px;};li {font-weight: bold;font-size: 1rem;text-shadow: 0.2px 0.2px grey;}; p{font-size: 1rem;margin: 5px;}};
+     ol {@include FlexColumn; img {margin: 10px;};li {font-weight: map-get($map: $diseñoEstandar, $key:grosor );font-size: 1rem;text-shadow: 0.2px 0.2px map-get($map: $diseñoEstandar, $key:colorPrincipal );}; p{font-size: 1rem;margin: 5px;}};
       .funcionamientoRegistra{ p {width:20rem};img {width: 5%;}};.funcionamientoCompleta{ p {width:20rem}; img {width:5%}};.funcionamientoDisfruta{ p {width:20rem}; img {width:7%}}
     };
   .funcionamientoDeportista{ 
-     ol {display: flex;flex-direction: column;text-align: center;justify-content: center; img {margin: 10px;};li {font-weight: bold;font-size: 1rem;text-shadow: 0.2px 0.2px grey;} p{font-size: 1rem;margin: 5px;}}; .funcionamientoRegistra{ p {width:20rem};img {width: 5%;}};.funcionamientoBusca{ p {width:20rem}; img {width:5%}};.funcionamientoDisfruta{p {width:20rem}; img {width:7%}}
+     ol {@include FlexColumn; img {margin: 10px;};li {font-weight: bold;font-size: 1rem;text-shadow: 0.2px 0.2px grey;} p{font-size: 1rem;margin: 5px;}}; .funcionamientoRegistra{ p {width:20rem};img {width: 5%;}};.funcionamientoBusca{ p {width:20rem}; img {width:5%}};.funcionamientoDisfruta{p {width:20rem}; img {width:7%}}
    }}
 };
 @media screen and (min-width:1200px) {

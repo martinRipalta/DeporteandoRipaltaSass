@@ -1,7 +1,9 @@
 @import "../base/variables";
 @import "../base/mixin";
+@import "../base/maps";
+@import "../base/extend";
 
-main{.preguntas{display: grid; grid-template-columns:0.25fr 0.75fr;grid-template-rows: repeat(5,0.5fr);row-gap:1rem;;align-items:center;justify-items:center;margin-bottom: 10px;img{width:50%};.preguntasFrec{.accordion{.accordion-item {background: linear-gradient(90deg,$colorFondoUno 4%, $colorFondoDos 70%, $colorFondoTres 100%);.accordion-header{.accordion-button{text-shadow: 1px 1px grey;text-align: center;justify-content: center; background: linear-gradient(90deg, $colorFondoUno 4%, $colorFondoDos 70%, $colorFondoTres 100%); font-weight: bold;text-decoration: none; color: black ;};.accordion-button:hover{color:black;}};.accordion-collapse{.accordion-body{li {list-style: none;}}}}}}}}
+main{.preguntas{display: grid; grid-template-columns:0.25fr 0.75fr;grid-template-rows: repeat(5,0.5fr);row-gap:1rem;;align-items:center;justify-items:center;margin-bottom: 10px;img{width:50%};.preguntasFrec{.accordion{.accordion-item {background: linear-gradient(90deg,$colorFondoUno 4%, $colorFondoDos 70%, $colorFondoTres 100%);.accordion-header{.accordion-button{text-shadow: 1px 1px grey;text-align: center;justify-content: center; background: linear-gradient(90deg, $colorFondoUno 4%, $colorFondoDos 70%, $colorFondoTres 100%); font-weight: map-get($map: $diseñoEstandar, $key:grosor );text-decoration: none; color:map-get($map: $diseñoEstandar, $key:colorEstandar ) ;};.accordion-button:hover{color:map-get($map: $diseñoEstandar, $key:colorEstandar );}};.accordion-collapse{.accordion-body{li {list-style:map-get($map: $diseñoEstandar, $key:subrayado );}}}}}}}}
 
 @media screen and (min-width:600px)
 {main{.preguntas {display:flex;flex-direction: column;img {width:5%}}}}

@@ -1,4 +1,7 @@
 @import"../base/variables";
+@import "../base/mixin";
+@import "../base/maps";
+@import "../base/extend";
 main {
  .mainArriba{
      img{
@@ -6,12 +9,12 @@ main {
         }};
      .formularioHome{
          fieldset{
-             border: 2px solid black;
+             border: 2px map-get($map:$letrasGrosorSombra , $key: diseño ) map-get($map: $letrasGrosorSombra, $key:colorEstandar );
              legend{
-                 font-size:x-small;color:beige;text-align: center;font-weight: bold;text-shadow: 1px 1px black;
+                 font-size:x-small;color:map-get($map: $diseñoEstandar, $key:colorSecundario );text-align: center;font-weight: map-get($map: $diseñoEstandar, $key:grosor );text-shadow: 1px 1px map-get($map: $diseñoEstandar, $key:colorEstandar );
                 };
              div{
-                font-size:xx-small;color: beige;text-align: left; font-weight: bold;text-shadow: 1px 1px black;
+                font-size:xx-small;color:map-get($map: $diseñoEstandar, $key:colorSecundario );text-align: left; font-weight: map-get($map: $diseñoEstandar, $key:grosor);text-shadow: 1px 1px map-get($map: $diseñoEstandar, $key:colorEstandar );
                 img{
                  width:5%};
                input{
@@ -20,21 +23,21 @@ main {
          position: relative;bottom: 110px;left: 280px;max-width: 12rem;max-height: 0.1rem;
         };
  .animate__shakeY{
-     h2{text-align: center; word-spacing: 2px;font-size:2.8rem;margin: 50px;color:$colorLetras;text-shadow: 2px 2px black;}
+     h2{text-align: center; word-spacing: 2px;font-size:2.8rem;margin: 50px;color:$colorLetras;text-shadow: 2px 2px map-get($map: $diseñoEstandar, $key:colorEstandar );}
     };
  .seccionUnoHome{
-     display: grid;grid-template-columns: 0.5fr 0.5fr;column-gap: 1.5rem;border-bottom: 5px solid $colorLetras;margin-bottom: 25px;row-gap: 2rem;margin-left: 10px;margin-right: 10px;
+     display: grid;grid-template-columns: 0.5fr 0.5fr;column-gap: 1.5rem;border-bottom: 5px map-get($map: $letrasGrosorSombra, $key:diseño ) $colorLetras;margin-bottom: 25px;row-gap: 2rem;margin-left: 10px;margin-right: 10px;
      .seccionUnoHomeReduce {
-         display: flex;flex-direction: column;row-gap: 0.5rem;justify-content: center;align-items: center;margin-left:15px;img{width: 10%;justify-content: center};h3{text-align: center;};p {text-align: center;width: 10rem;}
+         @include flexColumn;row-gap: 0.5rem;margin-left:15px;img{width: 10%;justify-content: center};h3{text-align: center;};p {text-align: center;width: 10rem;}
         };
      .seccionUnoHomeFacil{
-         display: flex;flex-direction: column;row-gap: 0.5rem;justify-content: center;align-items: center;margin-left:15px;img{width: 15%;justify-content: center};h3{text-align: center;};p {text-align: center;width: 9.5rem;}
+         @include flexColumn;row-gap: 0.5rem;margin-left:15px;img{width: 15%;justify-content: center};h3{text-align: center;};p {text-align: center;width: 9.5rem;}
         };
      .seccionUnoHomeEncontra{
-         display: flex;flex-direction: column;row-gap: 0.5rem;justify-content: center;align-items: center;margin-left:15px;img{width: 10%;justify-content: center};h3{text-align: center;};p {text-align: center;width: 10rem;}
+         @include flexColumn;row-gap: 0.5rem;margin-left:15px;img{width: 10%;justify-content: center};h3{text-align: center;};p {text-align: center;width: 10rem;}
         };
      .seccionUnoHomeArma {
-         display: flex;flex-direction: column;row-gap: 0.5rem;justify-content: center;align-items: center;margin-left:15px;margin-bottom: 30px;img{width: 10%;justify-content: center};h3{text-align: center;};p {text-align: center;width: 9.5rem;margin-top: 20px;}
+         @include flexColumn;row-gap: 0.5rem;margin-left:15px;margin-bottom: 30px;img{width: 10%;justify-content: center};h3{text-align: center;};p {text-align: center;width: 9.5rem;margin-top: 20px;}
         }
     };
  .homePasos{
@@ -42,16 +45,16 @@ main {
           iframe{width: 95%;margin-left: 15px;margin-right: 15px;}
         };
      .seccionDosHome{
-         display: flex;justify-content: center;flex-direction: column;
-         h2{text-align: center;word-spacing: 2px;font-size:40px;margin: 15px;color:$colorLetras;text-shadow: 2px 2px black;};
-         ol{display: flex;justify-content: center;align-items: center;flex-direction: column;margin: 20px;
-         li{font-weight:bold;};
+         @include flexColumn;
+         h2{text-align: center;word-spacing: 2px;font-size:40px;margin: 15px;color:$colorLetras;text-shadow: map-get($map: $letrasGrosorSombra, $key:sombraEstandarAlto ) map-get($map: $letrasGrosorSombra, $key:sombraEstandarAncho ) map-get($map: $letrasGrosorSombra, $key:colorEstandar );};
+         ol{@include flexColumn;margin: 20px;
+         li{font-weight:map-get($map: $letrasGrosorSombra, $key:grosor );};
          img {margin: 10px;}
-         .seccionDosHomeBusca{display: flex;justify-content: center;align-items: center;flex-direction: column;
+         .seccionDosHomeBusca{ @include flexColumn;
          p {text-align: center;width: 20rem;font-size: 1rem;margin: 10px;}
          }
-         .seccionDosHomeReserva {display: flex;justify-content: center;align-items: center;flex-direction: column;p {text-align: center;width: 20rem;font-size: 1rem;margin:10px}}
-         .seccionDosHomeJuega {display: flex;justify-content: center;align-items: center;flex-direction: column;p {text-align: center;width: 20rem;font-size: 1rem;margin: 10px;};img{width: 5%}}}}}};
+         .seccionDosHomeReserva { @include flexColumn;p {text-align: center;width: 20rem;font-size: 1rem;margin:10px}}
+         .seccionDosHomeJuega { @include flexColumn;p {text-align: center;width: 20rem;font-size: 1rem;margin: 10px;};img{width: 5%}}}}}};
 @media screen and (min-width:600px) and (max-width:1200px)
 {main
    {
@@ -59,10 +62,10 @@ main {
           position: relative;bottom: 155px;left: 360px;max-width: 14rem;max-height: 0.1rem;
              fieldset{
              legend{
-                 font-size:smaller;color:beige;text-align: center;font-weight: bold;text-shadow: 1px 1px black;margin: 2px;
+                 font-size:smaller;color:map-get($map: $diseñoEstandar, $key:colorSecundario );text-align: center;font-weight: map-get($map: $diseñoEstandar, $key:grosor );text-shadow: 1px 1px map-get($map: $diseñoEstandar, $key:colorEstandar );margin: 2px;
                 };
                div{
-                 font-size:smaller;color: beige;text-align: left; font-weight: bold;text-shadow: 1px 1px black;margin: 2px;img {width: 8%;}
+                 font-size:smaller;color: map-get($map: $diseñoEstandar, $key:colorSecundario );text-align: left; font-weight: map-get($map: $diseñoEstandar, $key:grosor );text-shadow: 1px 1px map-get($map: $diseñoEstandar, $key:colorEstandar );margin: 2px;img {width: 8%;}
                 }}};
      .seccionUnoHome {
          display: flex; flex-direction: column;img {max-width: 5%;};
@@ -76,8 +79,8 @@ main {
      .formularioHome{
          position: relative;bottom: 220px;left: 810px;max-width: 25rem;max-height: 3rem;
          fieldset{
-             legend {font-size:larger;color:beige;text-align: center;font-weight: bold;text-shadow: 1px 1px black;margin: 5px;};
-          div {font-size:larger;color: beige;text-align: left; font-weight: bold;text-shadow: 1px 1px black;margin: 5px;img {width: 5%;};input {width: 7rem;font-size:small;}}}
+             legend {font-size:larger;color:map-get($map: $diseñoEstandar, $key:colorSecundario );text-align: center;font-weight: map-get($map: $diseñoEstandar, $key:grosor );text-shadow: 1px 1px map-get($map: $diseñoEstandar, $key:colorEstandar );margin: 5px;};
+          div {font-size:larger;color: map-get($map: $diseñoEstandar, $key:colorSecundario );text-align: left; font-weight: map-get($map: $diseñoEstandar, $key:grosor );text-shadow: 1px 1px map-get($map: $diseñoEstandar, $key:colorEstandar );margin: 5px;img {width: 5%;};input {width: 7rem;font-size:small;}}}
         } 
       .seccionUnoHome {
          flex-direction: row; justify-content: space-around;border-bottom: none;margin-bottom: 40px;
