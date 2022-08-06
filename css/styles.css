@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap");
-header .row nav .container-fluid, footer {
+header .row nav .container-fluid, footer, main .formularioHome fieldset, main .complejosInscriptosFutbol .complejoInscriptoFutbolUno .imagenComplejo, main .complejosInscriptosFutbol .complejoInscriptoFutbolDos .imagenComplejo, main .complejosInscriptosFutbol .complejoInscriptoFutbolTres .imagenComplejo, main .complejosInscriptosTenis .complejoInscriptoTenisUno .imagenComplejo, main .complejosInscriptosTenis .complejoInscriptoTenisDos .imagenComplejo, main .complejosInscriptosTenis .complejoInscriptoTenisTres .imagenComplejo, main .formularioInscripcion fieldset {
   border: 2px solid black; }
 
 * {
@@ -25,7 +25,7 @@ body {
     body .estiloGeneral footer {
       grid-area: footer; }
 
-header .row nav .container-fluid, footer {
+header .row nav .container-fluid, footer, main .formularioHome fieldset, main .complejosInscriptosFutbol .complejoInscriptoFutbolUno .imagenComplejo, main .complejosInscriptosFutbol .complejoInscriptoFutbolDos .imagenComplejo, main .complejosInscriptosFutbol .complejoInscriptoFutbolTres .imagenComplejo, main .complejosInscriptosTenis .complejoInscriptoTenisUno .imagenComplejo, main .complejosInscriptosTenis .complejoInscriptoTenisDos .imagenComplejo, main .complejosInscriptosTenis .complejoInscriptoTenisTres .imagenComplejo, main .formularioInscripcion fieldset {
   border: 2px solid black; }
 
 header {
@@ -59,11 +59,11 @@ header {
         header .row nav .container-fluid .desplegable #offcanvasNavbar .offcanvas-body .navbar-nav .nav-item a {
           color: black;
           font-size: 1rem;
-          font-weight: bold; }
+          font-weight: 2px; }
         header .row nav .container-fluid .desplegable #offcanvasNavbar .offcanvas-body .navbar-nav .dropdown .dropdown-menu {
           background: linear-gradient(270deg, #f5f3f6 4%, #f1c40f 70%, #f39c12 100%); }
 
-header .row nav .container-fluid, footer {
+header .row nav .container-fluid, footer, main .formularioHome fieldset, main .complejosInscriptosFutbol .complejoInscriptoFutbolUno .imagenComplejo, main .complejosInscriptosFutbol .complejoInscriptoFutbolDos .imagenComplejo, main .complejosInscriptosFutbol .complejoInscriptoFutbolTres .imagenComplejo, main .complejosInscriptosTenis .complejoInscriptoTenisUno .imagenComplejo, main .complejosInscriptosTenis .complejoInscriptoTenisDos .imagenComplejo, main .complejosInscriptosTenis .complejoInscriptoTenisTres .imagenComplejo, main .formularioInscripcion fieldset {
   border: 2px solid black; }
 
 footer {
@@ -150,7 +150,7 @@ footer {
   footer .footerCentral .footerSecciones ul li a:hover {
     color: white; } }
 
-header .row nav .container-fluid, footer {
+header .row nav .container-fluid, footer, main .formularioHome fieldset, main .complejosInscriptosFutbol .complejoInscriptoFutbolUno .imagenComplejo, main .complejosInscriptosFutbol .complejoInscriptoFutbolDos .imagenComplejo, main .complejosInscriptosFutbol .complejoInscriptoFutbolTres .imagenComplejo, main .complejosInscriptosTenis .complejoInscriptoTenisUno .imagenComplejo, main .complejosInscriptosTenis .complejoInscriptoTenisDos .imagenComplejo, main .complejosInscriptosTenis .complejoInscriptoTenisTres .imagenComplejo, main .formularioInscripcion fieldset {
   border: 2px solid black; }
 
 main .mainArriba img {
@@ -162,25 +162,23 @@ main .formularioHome {
   left: 280px;
   max-width: 12rem;
   max-height: 0.1rem; }
-  main .formularioHome fieldset {
-    border: 2px solid black; }
-    main .formularioHome fieldset legend {
-      font-size: x-small;
-      color: beige;
-      text-align: center;
-      font-weight: bold;
-      text-shadow: 1px 1px black; }
-    main .formularioHome fieldset div {
-      font-size: xx-small;
-      color: beige;
-      text-align: left;
-      font-weight: bold;
-      text-shadow: 1px 1px black; }
-      main .formularioHome fieldset div img {
-        width: 5%; }
-      main .formularioHome fieldset div input {
-        width: 4rem;
-        font-size: smaller; }
+  main .formularioHome fieldset legend {
+    font-size: x-small;
+    color: beige;
+    text-align: center;
+    font-weight: bold;
+    text-shadow: 1px 1px black; }
+  main .formularioHome fieldset div {
+    font-size: xx-small;
+    color: beige;
+    text-align: left;
+    font-weight: bold;
+    text-shadow: 1px 1px black; }
+    main .formularioHome fieldset div img {
+      width: 5%; }
+    main .formularioHome fieldset div input {
+      width: 4rem;
+      font-size: smaller; }
 
 main .animate__shakeY h2 {
   text-align: center;
@@ -331,7 +329,7 @@ main .homePasos .seccionDosHome {
       main .homePasos .seccionDosHome ol .seccionDosHomeJuega img {
         width: 5%; }
 
-@media screen and (min-width: 600px) and (max-width: 1200px) {
+@media screen and (min-width: 600px) {
   main .formularioHome {
     position: relative;
     bottom: 155px;
@@ -356,13 +354,18 @@ main .homePasos .seccionDosHome {
         width: 8%; }
   main .seccionUnoHome {
     display: flex;
-    flex-direction: column; }
-    main .seccionUnoHome img {
-      max-width: 5%; }
-    main .seccionUnoHome .seccionUnoHomeArma {
-      margin-bottom: 0px; }
-      main .seccionUnoHome .seccionUnoHomeArma p {
-        margin-top: 0px; }
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center; }
+    main .seccionUnoHome .seccionUnoHomeReduce img {
+      width: 10%; }
+    main .seccionUnoHome .seccionUnoHomeFacil img {
+      width: 10%; }
+    main .seccionUnoHome .seccionUnoHomeEncontra img {
+      width: 10%; }
+    main .seccionUnoHome .seccionUnoHomeArma img {
+      width: 10%; }
   main .homePasos {
     display: grid;
     grid-template-columns: 1fr 0.5fr;
@@ -378,6 +381,28 @@ main .homePasos .seccionDosHome {
       text-align: center; } }
 
 @media screen and (min-width: 1200px) {
+  main .seccionUnoHome {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center; }
+    main .seccionUnoHome .seccionUnoHomeReduce img {
+      width: 10%; }
+    main .seccionUnoHome .seccionUnoHomeFacil {
+      margin-top: 10px; }
+      main .seccionUnoHome .seccionUnoHomeFacil img {
+        width: 10%; }
+    main .seccionUnoHome .seccionUnoHomeEncontra {
+      margin-bottom: 2px; }
+      main .seccionUnoHome .seccionUnoHomeEncontra img {
+        width: 10%; }
+    main .seccionUnoHome .seccionUnoHomeArma {
+      margin-top: 10px; }
+      main .seccionUnoHome .seccionUnoHomeArma img {
+        width: 10%; }
+      main .seccionUnoHome .seccionUnoHomeArma p {
+        margin-bottom: 10px; }
   main .formularioHome {
     position: relative;
     bottom: 220px;
@@ -425,7 +450,7 @@ main .homePasos .seccionDosHome {
       main .seccionUnoHome .seccionUnoHomeArma p {
         width: 17rem; } }
 
-header .row nav .container-fluid, footer {
+header .row nav .container-fluid, footer, main .formularioHome fieldset, main .complejosInscriptosFutbol .complejoInscriptoFutbolUno .imagenComplejo, main .complejosInscriptosFutbol .complejoInscriptoFutbolDos .imagenComplejo, main .complejosInscriptosFutbol .complejoInscriptoFutbolTres .imagenComplejo, main .complejosInscriptosTenis .complejoInscriptoTenisUno .imagenComplejo, main .complejosInscriptosTenis .complejoInscriptoTenisDos .imagenComplejo, main .complejosInscriptosTenis .complejoInscriptoTenisTres .imagenComplejo, main .formularioInscripcion fieldset {
   border: 2px solid black; }
 
 main .mainArriba img {
@@ -442,49 +467,37 @@ main .funcionamientoEstablecimientoDeportivo h3 {
 
 main .funcionamientoEstablecimientoDeportivo ol {
   display: flex;
-  justify-content: space-between;
-  column-gap: 0.8rem;
-  margin-left: 20px;
-  margin-bottom: 30px; }
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  align-items: center; }
+  main .funcionamientoEstablecimientoDeportivo ol img {
+    margin: 10px; }
   main .funcionamientoEstablecimientoDeportivo ol li {
     font-weight: bold;
-    font-size: 0.8rem;
+    font-size: 1rem;
     text-shadow: 0.2px 0.2px grey; }
   main .funcionamientoEstablecimientoDeportivo ol p {
-    font-size: 0.8rem; }
+    font-size: 1rem;
+    margin: 5px; }
 
-main .funcionamientoEstablecimientoDeportivo .funcionamientoRegistra {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  text-align: center;
-  align-items: center;
-  row-gap: 1rem; }
-  main .funcionamientoEstablecimientoDeportivo .funcionamientoRegistra p {
-    width: 6.5rem; }
+main .funcionamientoEstablecimientoDeportivo .funcionamientoRegistra p {
+  width: 20rem; }
 
-main .funcionamientoEstablecimientoDeportivo .funcionamientoCompleta {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  text-align: center;
-  align-items: center;
-  row-gap: 1rem; }
-  main .funcionamientoEstablecimientoDeportivo .funcionamientoCompleta p {
-    width: 7rem; }
+main .funcionamientoEstablecimientoDeportivo .funcionamientoRegistra img {
+  width: 5%; }
 
-main .funcionamientoEstablecimientoDeportivo .funcionamientoDisfruta {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  text-align: center;
-  align-items: center;
-  row-gap: 1rem; }
-  main .funcionamientoEstablecimientoDeportivo .funcionamientoDisfruta p {
-    width: 6.5rem;
-    margin-right: 5px; }
-  main .funcionamientoEstablecimientoDeportivo .funcionamientoDisfruta img {
-    width: 15%; }
+main .funcionamientoEstablecimientoDeportivo .funcionamientoCompleta p {
+  width: 20rem; }
+
+main .funcionamientoEstablecimientoDeportivo .funcionamientoCompleta img {
+  width: 5%; }
+
+main .funcionamientoEstablecimientoDeportivo .funcionamientoDisfruta p {
+  width: 20rem; }
+
+main .funcionamientoEstablecimientoDeportivo .funcionamientoDisfruta img {
+  width: 7%; }
 
 main .funcionamientoDeportista h3 {
   text-align: center;
@@ -497,103 +510,37 @@ main .funcionamientoDeportista h3 {
 
 main .funcionamientoDeportista ol {
   display: flex;
-  justify-content: space-between;
-  column-gap: 0.8rem;
-  margin-left: 30px;
-  margin-bottom: 30px; }
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  align-items: center; }
+  main .funcionamientoDeportista ol img {
+    margin: 10px; }
   main .funcionamientoDeportista ol li {
     font-weight: bold;
-    font-size: 0.8rem;
+    font-size: 1rem;
     text-shadow: 0.2px 0.2px grey; }
   main .funcionamientoDeportista ol p {
-    font-size: 0.8rem; }
+    font-size: 1rem;
+    margin: 5px; }
 
-main .funcionamientoDeportista .funcionamientoRegistra {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  text-align: center;
-  align-items: center;
-  row-gap: 1rem;
-  margin-left: 5px; }
-  main .funcionamientoDeportista .funcionamientoRegistra p {
-    width: 6.5rem; }
+main .funcionamientoDeportista .funcionamientoRegistra p {
+  width: 20rem; }
 
-main .funcionamientoDeportista .funcionamientoBusca {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  text-align: center;
-  align-items: center;
-  row-gap: 1rem;
-  margin-left: 20px; }
-  main .funcionamientoDeportista .funcionamientoBusca p {
-    width: 7rem; }
+main .funcionamientoDeportista .funcionamientoRegistra img {
+  width: 5%; }
 
-main .funcionamientoDeportista .funcionamientoDisfruta {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  text-align: center;
-  align-items: center;
-  row-gap: 1rem; }
-  main .funcionamientoDeportista .funcionamientoDisfruta p {
-    width: 10rem;
-    margin-right: 5px; }
-  main .funcionamientoDeportista .funcionamientoDisfruta img {
-    width: 9.8%; }
+main .funcionamientoDeportista .funcionamientoBusca p {
+  width: 20rem; }
 
-@media screen and (min-width: 600px) {
-  main .funcionamientoEstablecimientoDeportivo ol {
-    display: flex;
-    flex-direction: column; }
-    main .funcionamientoEstablecimientoDeportivo ol img {
-      margin: 10px; }
-    main .funcionamientoEstablecimientoDeportivo ol li {
-      font-weight: bold;
-      font-size: 1rem;
-      text-shadow: 0.2px 0.2px grey; }
-    main .funcionamientoEstablecimientoDeportivo ol p {
-      font-size: 1rem;
-      margin: 5px; }
-  main .funcionamientoEstablecimientoDeportivo .funcionamientoRegistra p {
-    width: 20rem; }
-  main .funcionamientoEstablecimientoDeportivo .funcionamientoRegistra img {
-    width: 5%; }
-  main .funcionamientoEstablecimientoDeportivo .funcionamientoCompleta p {
-    width: 20rem; }
-  main .funcionamientoEstablecimientoDeportivo .funcionamientoCompleta img {
-    width: 5%; }
-  main .funcionamientoEstablecimientoDeportivo .funcionamientoDisfruta p {
-    width: 20rem; }
-  main .funcionamientoEstablecimientoDeportivo .funcionamientoDisfruta img {
-    width: 7%; }
-  main .funcionamientoDeportista ol {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    justify-content: center; }
-    main .funcionamientoDeportista ol img {
-      margin: 10px; }
-    main .funcionamientoDeportista ol li {
-      font-weight: bold;
-      font-size: 1rem;
-      text-shadow: 0.2px 0.2px grey; }
-    main .funcionamientoDeportista ol p {
-      font-size: 1rem;
-      margin: 5px; }
-  main .funcionamientoDeportista .funcionamientoRegistra p {
-    width: 20rem; }
-  main .funcionamientoDeportista .funcionamientoRegistra img {
-    width: 5%; }
-  main .funcionamientoDeportista .funcionamientoBusca p {
-    width: 20rem; }
-  main .funcionamientoDeportista .funcionamientoBusca img {
-    width: 5%; }
-  main .funcionamientoDeportista .funcionamientoDisfruta p {
-    width: 20rem; }
-  main .funcionamientoDeportista .funcionamientoDisfruta img {
-    width: 7%; } }
+main .funcionamientoDeportista .funcionamientoBusca img {
+  width: 5%; }
+
+main .funcionamientoDeportista .funcionamientoDisfruta p {
+  width: 20rem; }
+
+main .funcionamientoDeportista .funcionamientoDisfruta img {
+  width: 7%; }
 
 @media screen and (min-width: 1200px) {
   main .funcionamientoEstablecimientoDeportivo ol {
@@ -649,7 +596,7 @@ main .funcionamientoDeportista .funcionamientoDisfruta {
   main h3 {
     font-size: 2rem; } }
 
-header .row nav .container-fluid, footer {
+header .row nav .container-fluid, footer, main .formularioHome fieldset, main .complejosInscriptosFutbol .complejoInscriptoFutbolUno .imagenComplejo, main .complejosInscriptosFutbol .complejoInscriptoFutbolDos .imagenComplejo, main .complejosInscriptosFutbol .complejoInscriptoFutbolTres .imagenComplejo, main .complejosInscriptosTenis .complejoInscriptoTenisUno .imagenComplejo, main .complejosInscriptosTenis .complejoInscriptoTenisDos .imagenComplejo, main .complejosInscriptosTenis .complejoInscriptoTenisTres .imagenComplejo, main .formularioInscripcion fieldset {
   border: 2px solid black; }
 
 main .mainArriba img {
@@ -673,8 +620,7 @@ main .complejosInscriptosFutbol {
     margin-top: 10px;
     margin-bottom: 10px; }
     main .complejosInscriptosFutbol .complejoInscriptoFutbolUno .imagenComplejo {
-      width: 60%;
-      border: 2px solid black; }
+      width: 60%; }
     main .complejosInscriptosFutbol .complejoInscriptoFutbolUno ul li {
       list-style: none;
       text-align: left;
@@ -689,8 +635,7 @@ main .complejosInscriptosFutbol {
     margin-top: 10px;
     margin-bottom: 10px; }
     main .complejosInscriptosFutbol .complejoInscriptoFutbolDos .imagenComplejo {
-      width: 60%;
-      border: 2px solid black; }
+      width: 60%; }
     main .complejosInscriptosFutbol .complejoInscriptoFutbolDos ul li {
       list-style: none;
       text-align: left;
@@ -705,8 +650,7 @@ main .complejosInscriptosFutbol {
     margin-top: 10px;
     margin-bottom: 10px; }
     main .complejosInscriptosFutbol .complejoInscriptoFutbolTres .imagenComplejo {
-      width: 60%;
-      border: 2px solid black; }
+      width: 60%; }
     main .complejosInscriptosFutbol .complejoInscriptoFutbolTres ul li {
       list-style: none;
       text-align: left;
@@ -734,8 +678,7 @@ main .complejosInscriptosTenis {
     margin-top: 10px;
     margin-bottom: 10px; }
     main .complejosInscriptosTenis .complejoInscriptoTenisUno .imagenComplejo {
-      width: 60%;
-      border: 2px solid black; }
+      width: 60%; }
     main .complejosInscriptosTenis .complejoInscriptoTenisUno ul li {
       list-style: none;
       text-align: left;
@@ -750,8 +693,7 @@ main .complejosInscriptosTenis {
     margin-top: 10px;
     margin-bottom: 10px; }
     main .complejosInscriptosTenis .complejoInscriptoTenisDos .imagenComplejo {
-      width: 60%;
-      border: 2px solid black; }
+      width: 60%; }
     main .complejosInscriptosTenis .complejoInscriptoTenisDos ul li {
       list-style: none;
       text-align: left;
@@ -766,8 +708,7 @@ main .complejosInscriptosTenis {
     margin-top: 10px;
     margin-bottom: 10px; }
     main .complejosInscriptosTenis .complejoInscriptoTenisTres .imagenComplejo {
-      width: 60%;
-      border: 2px solid black; }
+      width: 60%; }
     main .complejosInscriptosTenis .complejoInscriptoTenisTres ul li {
       list-style: none;
       text-align: left;
@@ -785,26 +726,24 @@ main .formularioInscripcion {
     color: #D35400;
     text-shadow: 1px 1px black;
     font-weight: bold; }
-  main .formularioInscripcion fieldset {
-    border: 2px solid black; }
-    main .formularioInscripcion fieldset legend {
-      text-align: center;
-      font-weight: bold;
-      margin: 10px;
-      text-shadow: 1px 1px grey; }
-    main .formularioInscripcion fieldset label {
-      font-size: 0.8rem;
-      margin: 5px;
-      text-align: center;
-      align-items: center;
-      text-align: center;
-      font-weight: bold;
-      margin: 10px;
-      text-shadow: 0.5px 0.5px grey; }
-    main .formularioInscripcion fieldset input {
-      margin-bottom: 3px; }
-    main .formularioInscripcion fieldset .botonesFormulario {
-      margin: 10px; }
+  main .formularioInscripcion fieldset legend {
+    text-align: center;
+    font-weight: bold;
+    margin: 10px;
+    text-shadow: 1px 1px grey; }
+  main .formularioInscripcion fieldset label {
+    font-size: 0.8rem;
+    margin: 5px;
+    text-align: center;
+    align-items: center;
+    text-align: center;
+    font-weight: bold;
+    margin: 10px;
+    text-shadow: 0.5px 0.5px grey; }
+  main .formularioInscripcion fieldset input {
+    margin-bottom: 3px; }
+  main .formularioInscripcion fieldset .botonesFormulario {
+    margin: 10px; }
 
 @media screen and (min-width: 600px) {
   main .complejosInscriptosFutbol {
@@ -843,6 +782,9 @@ main .formularioInscripcion {
   main .formularioInscripcion fieldset .botonesFormulario {
     margin: 10px; } }
 
+header .row nav .container-fluid, footer, main .formularioHome fieldset, main .complejosInscriptosFutbol .complejoInscriptoFutbolUno .imagenComplejo, main .complejosInscriptosFutbol .complejoInscriptoFutbolDos .imagenComplejo, main .complejosInscriptosFutbol .complejoInscriptoFutbolTres .imagenComplejo, main .complejosInscriptosTenis .complejoInscriptoTenisUno .imagenComplejo, main .complejosInscriptosTenis .complejoInscriptoTenisDos .imagenComplejo, main .complejosInscriptosTenis .complejoInscriptoTenisTres .imagenComplejo, main .formularioInscripcion fieldset {
+  border: 2px solid black; }
+
 main .mainArriba img {
   width: 100%; }
 
@@ -880,7 +822,7 @@ main .sloganNosotros {
     margin-bottom: 10px;
     display: inline-block; } }
 
-header .row nav .container-fluid, footer {
+header .row nav .container-fluid, footer, main .formularioHome fieldset, main .complejosInscriptosFutbol .complejoInscriptoFutbolUno .imagenComplejo, main .complejosInscriptosFutbol .complejoInscriptoFutbolDos .imagenComplejo, main .complejosInscriptosFutbol .complejoInscriptoFutbolTres .imagenComplejo, main .complejosInscriptosTenis .complejoInscriptoTenisUno .imagenComplejo, main .complejosInscriptosTenis .complejoInscriptoTenisDos .imagenComplejo, main .complejosInscriptosTenis .complejoInscriptoTenisTres .imagenComplejo, main .formularioInscripcion fieldset {
   border: 2px solid black; }
 
 main .preguntas {
@@ -915,5 +857,5 @@ main .preguntas {
     main .preguntas img {
       width: 5%; } }
 
-header .row nav .container-fluid, footer {
+header .row nav .container-fluid, footer, main .formularioHome fieldset, main .complejosInscriptosFutbol .complejoInscriptoFutbolUno .imagenComplejo, main .complejosInscriptosFutbol .complejoInscriptoFutbolDos .imagenComplejo, main .complejosInscriptosFutbol .complejoInscriptoFutbolTres .imagenComplejo, main .complejosInscriptosTenis .complejoInscriptoTenisUno .imagenComplejo, main .complejosInscriptosTenis .complejoInscriptoTenisDos .imagenComplejo, main .complejosInscriptosTenis .complejoInscriptoTenisTres .imagenComplejo, main .formularioInscripcion fieldset {
   border: 2px solid black; }

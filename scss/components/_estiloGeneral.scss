@@ -7,7 +7,7 @@
 
 body {
     background: linear-gradient(90deg, $colorFondoUno 4%,$colorFondoDos 70%,$colorFondoTres 100%);
-    color: map-get($map: $letrasGrosorSombra, $key: colorEstandar );
+    color: map-get($map: $diseñoEstandar, $key: colorEstandar );
     font-family: sans-serif;
     .estiloGeneral{
         display: grid;grid-template-columns:repeat(4,0.25fr) ;grid-template-rows:0.1fr 2fr 0.5fr ;grid-template-areas:"header header header header" "main main main main" "footer footer footer footer";height: 100vh;
