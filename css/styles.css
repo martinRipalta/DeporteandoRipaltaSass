@@ -456,21 +456,19 @@ header .row nav .container-fluid, footer, main .formularioHome fieldset, main .c
 main .mainArriba img {
   width: 100%; }
 
-main .funcionamientoEstablecimientoDeportivo h3 {
-  text-align: center;
-  margin: 10px;
-  word-spacing: 2px;
-  font-size: 1.2rem;
-  color: #D35400;
-  text-shadow: 1px 1px black;
-  font-weight: bold; }
-
-main .funcionamientoEstablecimientoDeportivo ol {
+main .funcionamientoEstablecimientoDeportivo {
   display: flex;
   flex-direction: column;
   justify-content: center;
   text-align: center;
   align-items: center; }
+  main .funcionamientoEstablecimientoDeportivo h3 {
+    margin: 10px;
+    word-spacing: 2px;
+    font-size: 1.2rem;
+    color: #D35400;
+    text-shadow: 1px 1px black;
+    font-weight: bold; }
   main .funcionamientoEstablecimientoDeportivo ol img {
     margin: 10px; }
   main .funcionamientoEstablecimientoDeportivo ol li {
@@ -480,40 +478,22 @@ main .funcionamientoEstablecimientoDeportivo ol {
   main .funcionamientoEstablecimientoDeportivo ol p {
     font-size: 1rem;
     margin: 5px; }
+  main .funcionamientoEstablecimientoDeportivo ol .funcionamientoDisfruta img {
+    width: 5%; }
 
-main .funcionamientoEstablecimientoDeportivo .funcionamientoRegistra p {
-  width: 20rem; }
-
-main .funcionamientoEstablecimientoDeportivo .funcionamientoRegistra img {
-  width: 5%; }
-
-main .funcionamientoEstablecimientoDeportivo .funcionamientoCompleta p {
-  width: 20rem; }
-
-main .funcionamientoEstablecimientoDeportivo .funcionamientoCompleta img {
-  width: 5%; }
-
-main .funcionamientoEstablecimientoDeportivo .funcionamientoDisfruta p {
-  width: 20rem; }
-
-main .funcionamientoEstablecimientoDeportivo .funcionamientoDisfruta img {
-  width: 7%; }
-
-main .funcionamientoDeportista h3 {
-  text-align: center;
-  margin: 10px;
-  word-spacing: 2px;
-  font-size: 1.2rem;
-  color: #D35400;
-  text-shadow: 1px 1px black;
-  font-weight: bold; }
-
-main .funcionamientoDeportista ol {
+main .funcionamientoDeportista {
   display: flex;
   flex-direction: column;
   justify-content: center;
   text-align: center;
   align-items: center; }
+  main .funcionamientoDeportista h3 {
+    margin: 10px;
+    word-spacing: 2px;
+    font-size: 1.2rem;
+    color: #D35400;
+    text-shadow: 1px 1px black;
+    font-weight: bold; }
   main .funcionamientoDeportista ol img {
     margin: 10px; }
   main .funcionamientoDeportista ol li {
@@ -523,24 +503,86 @@ main .funcionamientoDeportista ol {
   main .funcionamientoDeportista ol p {
     font-size: 1rem;
     margin: 5px; }
+  main .funcionamientoDeportista ol .funcionamientoDisfruta img {
+    width: 5%; }
 
-main .funcionamientoDeportista .funcionamientoRegistra p {
-  width: 20rem; }
-
-main .funcionamientoDeportista .funcionamientoRegistra img {
-  width: 5%; }
-
-main .funcionamientoDeportista .funcionamientoBusca p {
-  width: 20rem; }
-
-main .funcionamientoDeportista .funcionamientoBusca img {
-  width: 5%; }
-
-main .funcionamientoDeportista .funcionamientoDisfruta p {
-  width: 20rem; }
-
-main .funcionamientoDeportista .funcionamientoDisfruta img {
-  width: 7%; }
+@media screen and (min-width: 600px) {
+  main .funcionamientoEstablecimientoDeportivo ol .funcionamientoRegistra {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    margin-top: 10px; }
+    main .funcionamientoEstablecimientoDeportivo ol .funcionamientoRegistra li {
+      list-style: none;
+      width: 10rem; }
+    main .funcionamientoEstablecimientoDeportivo ol .funcionamientoRegistra p {
+      width: 15rem; }
+  main .funcionamientoEstablecimientoDeportivo ol .funcionamientoCompleta {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    margin-top: 10px;
+    margin-bottom: 10px; }
+    main .funcionamientoEstablecimientoDeportivo ol .funcionamientoCompleta li {
+      list-style: none;
+      width: 10rem; }
+    main .funcionamientoEstablecimientoDeportivo ol .funcionamientoCompleta p {
+      width: 15rem; }
+  main .funcionamientoEstablecimientoDeportivo ol .funcionamientoDisfruta {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    margin-top: 10px;
+    margin-bottom: 10px; }
+    main .funcionamientoEstablecimientoDeportivo ol .funcionamientoDisfruta li {
+      list-style: none;
+      width: 10rem; }
+    main .funcionamientoEstablecimientoDeportivo ol .funcionamientoDisfruta p {
+      width: 15rem; }
+  main .funcionamientoDeportista ol .funcionamientoRegistra {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    margin-top: 10px; }
+    main .funcionamientoDeportista ol .funcionamientoRegistra li {
+      list-style: none;
+      width: 10rem; }
+    main .funcionamientoDeportista ol .funcionamientoRegistra p {
+      width: 15rem; }
+  main .funcionamientoDeportista ol .funcionamientoBusca {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    margin-top: 10px;
+    margin-bottom: 10px; }
+    main .funcionamientoDeportista ol .funcionamientoBusca li {
+      list-style: none;
+      width: 10rem; }
+    main .funcionamientoDeportista ol .funcionamientoBusca p {
+      width: 15rem; }
+  main .funcionamientoDeportista ol .funcionamientoDisfruta {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    margin-top: 10px;
+    margin-bottom: 10px; }
+    main .funcionamientoDeportista ol .funcionamientoDisfruta li {
+      list-style: none;
+      width: 10rem; }
+    main .funcionamientoDeportista ol .funcionamientoDisfruta p {
+      width: 15rem; } }
 
 @media screen and (min-width: 1200px) {
   main .funcionamientoEstablecimientoDeportivo ol {
@@ -548,52 +590,90 @@ main .funcionamientoDeportista .funcionamientoDisfruta img {
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 1fr);
     grid-template-areas: "funcionamientoRegistra funcionamientoCompleta" "funcionamientoDisfrutar funcionamientoDisfrutar"; }
-  main .funcionamientoRegistra {
-    grid-area: funcionamientoRegistra; }
-    main .funcionamientoRegistra img {
-      width: 8%; }
-    main .funcionamientoRegistra p {
-      width: 30rem; }
-  main .funcionamientoCompleta {
-    grid-area: funcionamientoCompleta; }
-    main .funcionamientoCompleta img {
-      width: 8%; }
-    main .funcionamientoCompleta p {
-      width: 30rem; }
-  main .funcionamientoDisfruta {
-    grid-area: funcionamientoDisfrutar; }
-    main .funcionamientoDisfruta img {
-      width: 5%; }
-    main .funcionamientoDisfruta p {
-      width: 30rem;
-      text-align: center; }
-  main h3 {
+    main .funcionamientoEstablecimientoDeportivo ol .funcionamientoRegistra {
+      grid-area: funcionamientoRegistra;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      text-align: center;
+      align-items: center; }
+      main .funcionamientoEstablecimientoDeportivo ol .funcionamientoRegistra li {
+        width: 30rem;
+        font-size: 1.3rem; }
+      main .funcionamientoEstablecimientoDeportivo ol .funcionamientoRegistra p {
+        width: 30rem; }
+    main .funcionamientoEstablecimientoDeportivo ol .funcionamientoCompleta {
+      grid-area: funcionamientoCompleta;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      text-align: center;
+      align-items: center; }
+      main .funcionamientoEstablecimientoDeportivo ol .funcionamientoCompleta li {
+        width: 30rem;
+        font-size: 1.3rem; }
+      main .funcionamientoEstablecimientoDeportivo ol .funcionamientoCompleta p {
+        width: 30rem; }
+    main .funcionamientoEstablecimientoDeportivo ol .funcionamientoDisfruta {
+      grid-area: funcionamientoDisfrutar;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      text-align: center;
+      align-items: center; }
+      main .funcionamientoEstablecimientoDeportivo ol .funcionamientoDisfruta li {
+        width: 30rem;
+        font-size: 1.3rem; }
+      main .funcionamientoEstablecimientoDeportivo ol .funcionamientoDisfruta p {
+        width: 30rem; }
+      main .funcionamientoEstablecimientoDeportivo ol .funcionamientoDisfruta img {
+        width: 3%; }
+  main .funcionamientoEstablecimientoDeportivo h3 {
     font-size: 2rem; }
   main .funcionamientoDeportista ol {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 1fr);
     grid-template-areas: "funcionamientoRegistra funcionamientoCompleta" "funcionamientoDisfrutar funcionamientoDisfrutar"; }
-  main .funcionamientoDeportista .funcionamientoRegistra {
-    grid-area: funcionamientoRegistra; }
-    main .funcionamientoDeportista .funcionamientoRegistra img {
-      width: 8%; }
-      main .funcionamientoDeportista .funcionamientoRegistra img p {
+    main .funcionamientoDeportista ol .funcionamientoRegistra {
+      grid-area: funcionamientoRegistra;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      text-align: center;
+      align-items: center; }
+      main .funcionamientoDeportista ol .funcionamientoRegistra li {
+        width: 30rem;
+        font-size: 1.3rem; }
+      main .funcionamientoDeportista ol .funcionamientoRegistra p {
         width: 30rem; }
-  main .funcionamientoDeportista .funcionamientoBusca {
-    grid-area: funcionamientoCompleta; }
-    main .funcionamientoDeportista .funcionamientoBusca img {
-      width: 6%; }
-    main .funcionamientoDeportista .funcionamientoBusca p {
-      width: 30rem; }
-  main .funcionamientoDeportista .funcionamientoDisfruta {
-    grid-area: funcionamientoDisfrutar; }
-    main .funcionamientoDeportista .funcionamientoDisfruta img {
-      width: 4%; }
-    main .funcionamientoDeportista .funcionamientoDisfruta p {
-      width: 30rem;
-      text-align: center; }
-  main h3 {
+    main .funcionamientoDeportista ol .funcionamientoBusca {
+      grid-area: funcionamientoCompleta;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      text-align: center;
+      align-items: center; }
+      main .funcionamientoDeportista ol .funcionamientoBusca li {
+        width: 30rem;
+        font-size: 1.3rem; }
+      main .funcionamientoDeportista ol .funcionamientoBusca p {
+        width: 30rem; }
+    main .funcionamientoDeportista ol .funcionamientoDisfruta {
+      grid-area: funcionamientoDisfrutar;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      text-align: center;
+      align-items: center; }
+      main .funcionamientoDeportista ol .funcionamientoDisfruta li {
+        width: 30rem;
+        font-size: 1.3rem; }
+      main .funcionamientoDeportista ol .funcionamientoDisfruta p {
+        width: 30rem; }
+      main .funcionamientoDeportista ol .funcionamientoDisfruta img {
+        width: 3%; }
+  main .funcionamientoDeportista h3 {
     font-size: 2rem; } }
 
 header .row nav .container-fluid, footer, main .formularioHome fieldset, main .complejosInscriptosFutbol .complejoInscriptoFutbolUno .imagenComplejo, main .complejosInscriptosFutbol .complejoInscriptoFutbolDos .imagenComplejo, main .complejosInscriptosFutbol .complejoInscriptoFutbolTres .imagenComplejo, main .complejosInscriptosTenis .complejoInscriptoTenisUno .imagenComplejo, main .complejosInscriptosTenis .complejoInscriptoTenisDos .imagenComplejo, main .complejosInscriptosTenis .complejoInscriptoTenisTres .imagenComplejo, main .formularioInscripcion fieldset {
@@ -603,8 +683,10 @@ main .mainArriba img {
   width: 100%; }
 
 main .futbolCentral {
-  text-align: center;
-  margin-bottom: 10px; }
+  text-align: center; }
+  main .futbolCentral h3 {
+    font-weight: bold;
+    text-shadow: 1px 1px white; }
 
 main .complejosInscriptosFutbol {
   display: flex;
@@ -615,54 +697,62 @@ main .complejosInscriptosFutbol {
   main .complejosInscriptosFutbol .complejoInscriptoFutbolUno {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    row-gap: 1rem;
-    margin-top: 10px;
-    margin-bottom: 10px; }
+    justify-content: center;
+    text-align: center;
+    align-items: center; }
     main .complejosInscriptosFutbol .complejoInscriptoFutbolUno .imagenComplejo {
       width: 60%; }
     main .complejosInscriptosFutbol .complejoInscriptoFutbolUno ul li {
       list-style: none;
       text-align: left;
-      margin-left: 90px; }
+      margin-top: 10px;
+      font-size: 0.8rem;
+      font-weight: bold; }
     main .complejosInscriptosFutbol .complejoInscriptoFutbolUno ul .imagenTelefono {
-      width: 5%; }
+      width: 4%;
+      margin-right: 5px; }
   main .complejosInscriptosFutbol .complejoInscriptoFutbolDos {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    row-gap: 1rem;
-    margin-top: 10px;
-    margin-bottom: 10px; }
+    justify-content: center;
+    text-align: center;
+    align-items: center; }
     main .complejosInscriptosFutbol .complejoInscriptoFutbolDos .imagenComplejo {
       width: 60%; }
     main .complejosInscriptosFutbol .complejoInscriptoFutbolDos ul li {
       list-style: none;
       text-align: left;
-      margin-left: 90px; }
+      margin-top: 10px;
+      font-size: 0.8rem;
+      font-weight: bold; }
     main .complejosInscriptosFutbol .complejoInscriptoFutbolDos ul .imagenTelefono {
-      width: 5%; }
+      width: 4%;
+      margin-right: 5px; }
   main .complejosInscriptosFutbol .complejoInscriptoFutbolTres {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    row-gap: 1rem;
-    margin-top: 10px;
-    margin-bottom: 10px; }
+    justify-content: center;
+    text-align: center;
+    align-items: center; }
     main .complejosInscriptosFutbol .complejoInscriptoFutbolTres .imagenComplejo {
       width: 60%; }
     main .complejosInscriptosFutbol .complejoInscriptoFutbolTres ul li {
       list-style: none;
       text-align: left;
-      margin-left: 90px; }
+      margin-top: 10px;
+      font-size: 0.8rem;
+      font-weight: bold; }
     main .complejosInscriptosFutbol .complejoInscriptoFutbolTres ul .imagenTelefono {
-      width: 5%; }
+      width: 4%;
+      margin-right: 5px; }
 
 main .tenisCentral {
-  text-align: center;
-  margin-bottom: 10px; }
+  text-align: center; }
+  main .tenisCentral h3 {
+    font-weight: bold;
+    text-shadow: 1px 1px white; }
   main .tenisCentral img {
-    width: 5%; }
+    width: 10%; }
 
 main .complejosInscriptosTenis {
   display: flex;
@@ -673,48 +763,54 @@ main .complejosInscriptosTenis {
   main .complejosInscriptosTenis .complejoInscriptoTenisUno {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    row-gap: 1rem;
-    margin-top: 10px;
-    margin-bottom: 10px; }
+    justify-content: center;
+    text-align: center;
+    align-items: center; }
     main .complejosInscriptosTenis .complejoInscriptoTenisUno .imagenComplejo {
       width: 60%; }
     main .complejosInscriptosTenis .complejoInscriptoTenisUno ul li {
       list-style: none;
       text-align: left;
-      margin-left: 90px; }
+      margin-top: 10px;
+      font-size: 0.8rem;
+      font-weight: bold; }
     main .complejosInscriptosTenis .complejoInscriptoTenisUno ul .imagenTelefono {
-      width: 5%; }
+      width: 4%;
+      margin-right: 5px; }
   main .complejosInscriptosTenis .complejoInscriptoTenisDos {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    row-gap: 1rem;
-    margin-top: 10px;
-    margin-bottom: 10px; }
+    justify-content: center;
+    text-align: center;
+    align-items: center; }
     main .complejosInscriptosTenis .complejoInscriptoTenisDos .imagenComplejo {
       width: 60%; }
     main .complejosInscriptosTenis .complejoInscriptoTenisDos ul li {
       list-style: none;
       text-align: left;
-      margin-left: 90px; }
+      margin-top: 10px;
+      font-size: 0.8rem;
+      font-weight: bold; }
     main .complejosInscriptosTenis .complejoInscriptoTenisDos ul .imagenTelefono {
-      width: 5%; }
+      width: 4%;
+      margin-right: 5px; }
   main .complejosInscriptosTenis .complejoInscriptoTenisTres {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    row-gap: 1rem;
-    margin-top: 10px;
-    margin-bottom: 10px; }
+    justify-content: center;
+    text-align: center;
+    align-items: center; }
     main .complejosInscriptosTenis .complejoInscriptoTenisTres .imagenComplejo {
       width: 60%; }
     main .complejosInscriptosTenis .complejoInscriptoTenisTres ul li {
       list-style: none;
       text-align: left;
-      margin-left: 90px; }
+      margin-top: 10px;
+      font-size: 0.8rem;
+      font-weight: bold; }
     main .complejosInscriptosTenis .complejoInscriptoTenisTres ul .imagenTelefono {
-      width: 5%; }
+      width: 4%;
+      margin-right: 5px; }
 
 main .formularioInscripcion {
   margin: 5px; }
@@ -746,30 +842,52 @@ main .formularioInscripcion {
     margin: 10px; }
 
 @media screen and (min-width: 600px) {
+  main .futbolCentral img {
+    width: 5%; }
   main .complejosInscriptosFutbol {
-    flex-direction: row; }
-    main .complejosInscriptosFutbol ul li {
-      list-style: none;
-      text-align: left;
-      margin-left: 30px; }
-    main .complejosInscriptosFutbol ul .imagenTelefono {
-      width: 9%;
-      margin-left: 3px; }
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+    align-items: center; }
+    main .complejosInscriptosFutbol .complejoInscriptoFutbolUno ul .imagenTelefono {
+      width: 10%; }
+    main .complejosInscriptosFutbol .complejoInscriptoFutbolDos ul .imagenTelefono {
+      width: 10%; }
+    main .complejosInscriptosFutbol .complejoInscriptoFutbolTres ul .imagenTelefono {
+      width: 10%; }
+  main .tenisCentral img {
+    width: 5%; }
   main .complejosInscriptosTenis {
-    flex-direction: row; }
-    main .complejosInscriptosTenis ul li {
-      list-style: none;
-      text-align: center;
-      margin-left: 30px; }
-    main .complejosInscriptosTenis ul .imagenTelefono {
-      width: 9%;
-      margin-left: 3px; } }
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+    align-items: center; }
+    main .complejosInscriptosTenis .complejoInscriptoTenisUno ul .imagenTelefono {
+      width: 10%; }
+    main .complejosInscriptosTenis .complejoInscriptoTenisDos ul .imagenTelefono {
+      width: 10%; }
+    main .complejosInscriptosTenis .complejoInscriptoTenisTres ul .imagenTelefono {
+      width: 10%; } }
 
 @media screen and (min-width: 1200px) {
-  main .complejosInscriptosFutbol ul li {
-    margin-left: 90px; }
-  main .complejosInscriptosTenis ul li {
-    margin-left: 90px; }
+  main .futbolCentral img {
+    width: 3%; }
+  main .complejosInscriptosFutbol .complejoInscriptoFutbolUno ul .imagenTelefono {
+    width: 5%; }
+  main .complejosInscriptosFutbol .complejoInscriptoFutbolDos ul .imagenTelefono {
+    width: 5%; }
+  main .complejosInscriptosFutbol .complejoInscriptoFutbolTres ul .imagenTelefono {
+    width: 5%; }
+  main .tenisCentral img {
+    width: 3%; }
+  main .complejosInscriptosTenis .complejoInscriptoTenisUno ul .imagenTelefono {
+    width: 5%; }
+  main .complejosInscriptosTenis .complejoInscriptoTenisDos ul .imagenTelefono {
+    width: 5%; }
+  main .complejosInscriptosTenis .complejoInscriptoTenisTres ul .imagenTelefono {
+    width: 5%; }
   main .formularioInscripcion h3 {
     font-size: 2.3rem; }
   main .formularioInscripcion fieldset legend {
