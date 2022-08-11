@@ -14,3 +14,18 @@
     align-items: center;
 };
 
+@mixin flexColumnAround {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: center;
+    align-items: center;
+};
+
+@mixin flexRowAround {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: center;
+    align-items: center;}
+

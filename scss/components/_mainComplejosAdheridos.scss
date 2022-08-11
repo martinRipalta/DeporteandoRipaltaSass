@@ -10,42 +10,42 @@ main
         {
          width:$medidaImagenesPrincipales
         }};
- .futbolCentral{text-align: center;h3{font-weight: map-get($map: $diseñoEstandar, $key:grosor);text-shadow: 1px 1px white;;}};
- .complejosInscriptosFutbol{@include flexColumn;.complejoInscriptoFutbolUno{@include flexColumn;.imagenComplejo{width: 60%;@extend %diseñoBordes};ul
+ .futbolCentral{text-align: center;h3{font-weight: map-get($map: $diseñoEstandar, $key:grosor);text-shadow: 1px 1px map-get($map: $diseñoEstandar, $key:colorPrincipal);color:white;};img{width:20%}};
+ .complejosInscriptosFutbol{@include flexColumn;.complejoInscriptoFutbolUno{@include flexColumn;.imagenComplejo{width: 60%;@extend %diseñoBordesComplejos};ul
  { li 
-     {list-style: map-get($map: $diseñoEstandar, $key:subrayado );text-align: left;margin-top: 10px;font-size: 0.8rem;font-weight: map-get($map: $diseñoEstandar, $key:grosor )};
-  .imagenTelefono {width: 4%;margin-right: 5px; }
- }};.complejoInscriptoFutbolDos{@include flexColumn;.imagenComplejo{width: 60%;@extend %diseñoBordes};ul
+     {list-style: map-get($map: $diseñoEstandar, $key:subrayado );text-align: left;color:white;margin-top: 10px;font-size: 0.8rem;font-weight: map-get($map: $diseñoEstandar, $key:grosor );img{width:8%}};
+  .imagenTelefono {width: 6%;margin-right: 5px; }
+ }};.complejoInscriptoFutbolDos{@include flexColumn;.imagenComplejo{width: 60%;@extend %diseñoBordesComplejos};ul
  { li 
-     {list-style: map-get($map: $diseñoEstandar, $key:subrayado );text-align: left;margin-top: 10px;font-size: 0.8rem;font-weight: map-get($map: $diseñoEstandar, $key:grosor )};
-  .imagenTelefono {width: 4%;margin-right: 5px; }
- }};.complejoInscriptoFutbolTres{@include flexColumn;.imagenComplejo{width: 60%;@extend %diseñoBordes};ul
- { li 
-     {list-style: map-get($map: $diseñoEstandar, $key:subrayado );text-align: left;margin-top: 10px;font-size: 0.8rem;font-weight: map-get($map: $diseñoEstandar, $key:grosor )};
-  .imagenTelefono {width: 4%;margin-right: 5px; }
- }}};.tenisCentral{text-align: center;h3{font-weight: map-get($map: $diseñoEstandar, $key:grosor);text-shadow: 1px 1px white;};img{width:10%}};.complejosInscriptosTenis{@include flexColumn;.complejoInscriptoTenisUno{@include flexColumn;.imagenComplejo{width: 60%;@extend %diseñoBordes};ul
- { li 
-     {list-style: map-get($map: $diseñoEstandar, $key:subrayado );text-align: left;margin-top: 10px;font-size: 0.8rem;font-weight: map-get($map: $diseñoEstandar, $key:grosor )};
-  .imagenTelefono {width: 4%;margin-right: 5px; }
- }};.complejoInscriptoTenisDos{@include flexColumn;.imagenComplejo{width: 60%;@extend %diseñoBordes};ul
- { li 
-     {list-style: map-get($map: $diseñoEstandar, $key:subrayado );text-align: left;margin-top: 10px;font-size: 0.8rem;font-weight: map-get($map: $diseñoEstandar, $key:grosor )};
-  .imagenTelefono {width: 4%;margin-right: 5px; }
- }};.complejoInscriptoTenisTres{@include flexColumn;.imagenComplejo{width: 60%;@extend %diseñoBordes};ul
- { li 
-     {list-style: map-get($map: $diseñoEstandar, $key:subrayado );text-align: left;margin-top: 10px;font-size: 0.8rem;font-weight: map-get($map: $diseñoEstandar, $key:grosor )};
-  .imagenTelefono {width: 4%;margin-right: 5px; }
- }}};.formularioInscripcion{ 
-    h3 {text-align: center;margin: 30px; word-spacing: 2px;font-size:1.5rem;color:$colorLetras;text-shadow: 1px 1px map-get($map: $diseñoEstandar, $key:colorEstandar );font-weight: map-get($map: $diseñoEstandar, $key:grosor );};margin: 5px; fieldset {@extend %diseñoBordes; legend {text-align: center;font-weight:map-get($map: $diseñoEstandar, $key:grosor );margin: 10px;text-shadow: 1px 1px map-get($map: $diseñoEstandar, $key:colorPrincipal );}; label {font-size:0.8rem;margin: 5px;text-align: center;align-items: center;text-align: center;font-weight:map-get($map: $diseñoEstandar, $key:grosor );margin: 10px;text-shadow: 0.5px 0.5px map-get($map: $diseñoEstandar, $key:colorPrincipal );}; input {margin-bottom: 3px;};.botonesFormulario {margin: 10px;}}}
+    {list-style: map-get($map: $diseñoEstandar, $key:subrayado );text-align: left;color:white;margin-top: 10px;font-size: 0.8rem;font-weight: map-get($map: $diseñoEstandar, $key:grosor );img{width:8%}};
+ .imagenTelefono {width: 6%;margin-right: 5px; }
+}};.complejoInscriptoFutbolTres{@include flexColumn;.imagenComplejo{width: 60%;@extend %diseñoBordesComplejos};ul
+{ li 
+    {list-style: map-get($map: $diseñoEstandar, $key:subrayado );text-align: left;color:white;margin-top: 10px;font-size: 0.8rem;font-weight: map-get($map: $diseñoEstandar, $key:grosor );img{width:8%}};
+ .imagenTelefono {width: 6%;margin-right: 5px; }
+}}};.tenisCentral{text-align: center;h3{font-weight: map-get($map: $diseñoEstandar, $key:grosor);text-shadow: 1px 1px map-get($map: $diseñoEstandar, $key:colorPrincipal);color:white};img{width:10%}};.complejosInscriptosTenis{@include flexColumn;.complejoInscriptoTenisUno{@include flexColumn;.imagenComplejo{width: 60%;@extend %diseñoBordesComplejos};ul
+{ li 
+    {list-style: map-get($map: $diseñoEstandar, $key:subrayado );text-align: left;color:white;margin-top: 10px;font-size: 0.8rem;font-weight: map-get($map: $diseñoEstandar, $key:grosor );img{width:8%}};
+ .imagenTelefono {width: 6%;margin-right: 5px; }
+}};.complejoInscriptoTenisDos{@include flexColumn;.imagenComplejo{width: 60%;@extend %diseñoBordesComplejos};ul
+{ li 
+    {list-style: map-get($map: $diseñoEstandar, $key:subrayado );text-align: left;color:white;margin-top: 10px;font-size: 0.8rem;font-weight: map-get($map: $diseñoEstandar, $key:grosor );img{width:8%}};
+ .imagenTelefono {width: 6%;margin-right: 5px; }
+}};.complejoInscriptoTenisTres{@include flexColumn;.imagenComplejo{width: 60%;@extend %diseñoBordesComplejos};ul
+{ li 
+    {list-style: map-get($map: $diseñoEstandar, $key:subrayado );text-align: left;color:white;margin-top: 10px;font-size: 0.8rem;font-weight: map-get($map: $diseñoEstandar, $key:grosor );img{width:8%}};
+ .imagenTelefono {width: 6%;margin-right: 5px; }
+}}};.formularioInscripcion{ 
+    h3 {text-align: center;margin: 30px; word-spacing: 2px;font-size:1.5rem;color:$colorLetras;text-shadow: 1px 1px map-get($map: $diseñoEstandar, $key:colorEstandar );font-weight: map-get($map: $diseñoEstandar, $key:grosor );};margin: 5px; fieldset {@extend %diseñoBordesComplejos; legend {text-align: center;font-weight:map-get($map: $diseñoEstandar, $key:grosor );color:white;margin: 10px;text-shadow: 1px 1px map-get($map: $diseñoEstandar, $key:colorPrincipal );}; label {color:white;font-size:0.8rem;margin: 5px;text-align: center;align-items: center;text-align: center;font-weight:map-get($map: $diseñoEstandar, $key:grosor );margin: 10px;text-shadow: 0.5px 0.5px map-get($map: $diseñoEstandar, $key:colorPrincipal );}; input {margin-bottom: 3px;};.botonesFormulario {margin: 10px;}}}
 };
 @media screen and (min-width:600px)
 {main
-    { .futbolCentral{img{width:5%}};.complejosInscriptosFutbol{@include flexRow;.complejoInscriptoFutbolUno{ul{.imagenTelefono{width:10%}}};.complejoInscriptoFutbolDos{ul{.imagenTelefono{width:10%}}};.complejoInscriptoFutbolTres{ul{.imagenTelefono{width:10%}}}};.tenisCentral{img{width:5%}};.complejosInscriptosTenis{@include flexRow;.complejoInscriptoTenisUno{ul{.imagenTelefono{width:10%}}};.complejoInscriptoTenisDos{ul{.imagenTelefono{width:10%}}};.complejoInscriptoTenisTres{ul{.imagenTelefono{width:10%}}}}
+    { .futbolCentral{img{width:20%}};.complejosInscriptosFutbol{@include flexRow;.complejoInscriptoFutbolUno{ul{li{img{width:12%}};.imagenTelefono{width:8%;margin-left:8px}}};.complejoInscriptoFutbolDos{ul{li{img{width:12%}};.imagenTelefono{width:8%;margin-left:8px}}};.complejoInscriptoFutbolTres{ul{li{img{width:12%}};.imagenTelefono{width:8%;margin-left:8px}}}};.tenisCentral{img{width:20%}};.complejosInscriptosTenis{@include flexRow;.complejoInscriptoTenisUno{ul{li{img{width:12%}};.imagenTelefono{width:8%;margin-left:8px}}};.complejoInscriptoTenisDos{ul{li{img{width:12%}};.imagenTelefono{width:8%;margin-left:8px}}};.complejoInscriptoTenisTres{ul{li{img{width:12%}};.imagenTelefono{width:8%;margin-left:8px}}}}
 }};
 
 @media screen and (min-width:1200px)
  {main
-     {.futbolCentral{img{width:3%;}};.complejosInscriptosFutbol{.complejoInscriptoFutbolUno{ul{.imagenTelefono{width:5%}}};.complejoInscriptoFutbolDos{ul{.imagenTelefono{width:5%}}};.complejoInscriptoFutbolTres{ul{.imagenTelefono{width:5%}}}};.tenisCentral{img{width:3%;}};.complejosInscriptosTenis{.complejoInscriptoTenisUno{ul{.imagenTelefono{width:5%}}};.complejoInscriptoTenisDos{ul{.imagenTelefono{width:5%}}};.complejoInscriptoTenisTres{ul{.imagenTelefono{width:5%}}}};
+     {.futbolCentral{img{width:10%;}};.complejosInscriptosFutbol{.complejoInscriptoFutbolUno{ul{li{img{width:8%}};.imagenTelefono{width:5%;margin-left:8px}}};.complejoInscriptoFutbolDos{ul{li{img{width:8%}};.imagenTelefono{width:5%;margin-left:8px}}};.complejoInscriptoFutbolTres{ul{li{img{width:8%}};.imagenTelefono{width:5%;margin-left:8px}}}};.tenisCentral{img{width:10%;}};.complejosInscriptosTenis{.complejoInscriptoTenisUno{ul{li{img{width:8%}};.imagenTelefono{width:5%;margin-left:8px}}};.complejoInscriptoTenisDos{ul{li{img{width:8%}};.imagenTelefono{width:5%;margin-left:8px}}};.complejoInscriptoTenisTres{ul{li{img{width:8%}};.imagenTelefono{width:5%;margin-left:8px}}}};
         .formularioInscripcion{
             h3
              {font-size:2.3rem;};

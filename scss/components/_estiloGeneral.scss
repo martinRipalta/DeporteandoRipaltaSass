@@ -6,7 +6,7 @@
 *{padding: 0px; margin:0px;box-sizing: border-box;};
 
 body {
-    background: linear-gradient(90deg, $colorFondoUno 4%,$colorFondoDos 70%,$colorFondoTres 100%);
+    background-color:black;
     color: map-get($map: $diseñoEstandar, $key: colorEstandar );
     font-family: sans-serif;
     .estiloGeneral{

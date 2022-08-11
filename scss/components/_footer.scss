@@ -4,7 +4,7 @@
 @import "../base/extend";
 
 footer{
-    grid-area: footer; display: grid; grid-template-columns: 0.5fr 1.5fr;grid-template-rows: 0.5fr 0.1fr;grid-template-areas: "footerDerecha footerCentral" "footerAbajo footerAbajo";background-color:$colorPrincipal;@extend %diseñoBordes;
+    grid-area: footer; display: grid; grid-template-columns: 0.5fr 1.5fr;grid-template-rows: 0.5fr 0.1fr;grid-template-areas: "footerDerecha footerCentral" "footerAbajo footerAbajo";background: linear-gradient(90deg, $colorFondoUno 20%, $colorFondoDos 40%, $colorFondoTres 75%, $colorFondoCuatro 100%);@extend %diseñoBordes;
     .footerDerecha{
         grid-area: footerDerecha;
         img{width:80%}
@@ -22,12 +22,12 @@ footer{
                 list-style:map-get($map: $diseñoEstandar, $key:subrayado ); text-decoration: map-get($map: $diseñoEstandar, $key:subrayado );color: map-get($map: $diseñoEstandar, $key:colorEstandar); font-weight: lighter;}}
          }};
         .footerDescarga{
-         h3{text-align: center;};
+         h3{text-align: center};
          ul{
             li{list-style:map-get($map: $diseñoEstandar, $key:subrayado ); text-decoration: map-get($map: $diseñoEstandar, $key:subrayado );word-spacing: 2px;}
          }};
       .footerContacto{
-            h3{text-align: center;};
+            h3{text-align: center};
             ul{
                 li{
                     list-style:map-get($map: $diseñoEstandar, $key:subrayado ); text-decoration: map-get($map: $diseñoEstandar, $key:subrayado );a{
@@ -35,7 +35,8 @@ footer{
                         a:hover{
                             color: white;}};
                 .mail{
-                    margin-right: 5px; font-size: small;}
+                    margin-right: 5px; font-size: small;};
+                .redesSociales{img{width:5%}}
             }
          }
     };
