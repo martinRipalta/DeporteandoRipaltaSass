@@ -4,16 +4,16 @@
 @import "../base/extend";
 
 footer{
-    grid-area: footer; display: grid; grid-template-columns: 0.5fr 1.5fr;grid-template-rows: 0.5fr 0.1fr;grid-template-areas: "footerDerecha footerCentral" "footerAbajo footerAbajo";background: linear-gradient(90deg, $colorFondoUno 20%, $colorFondoDos 40%, $colorFondoTres 75%, $colorFondoCuatro 100%);@extend %diseñoBordes;
+    grid-area: footer; display: grid; grid-template-columns: 0.5fr 1.5fr;grid-template-rows: 0.5fr 0.1fr;grid-template-areas: "footerDerecha footerCentral" "footerAbajo footerAbajo";background: linear-gradient(90deg, $colorFondoUno 5%, $colorFondoDos 20%, $colorFondoTres 75%, $colorFondoCuatro 100%);@extend %diseñoBordes;
     .footerDerecha{
         grid-area: footerDerecha;
-        img{width:80%}
+        img{width:60%}
     };
     .footerCentral{grid-area: footerCentral;
         display: flex;flex-direction: column;justify-content: space-between;align-items: flex-start;row-gap: 1rem;
         .footerSecciones{
          h3{
-                text-align: center;
+                text-align: left;
             };
          ul{
              li{
@@ -22,12 +22,12 @@ footer{
                 list-style:map-get($map: $diseñoEstandar, $key:subrayado ); text-decoration: map-get($map: $diseñoEstandar, $key:subrayado );color: map-get($map: $diseñoEstandar, $key:colorEstandar); font-weight: lighter;}}
          }};
         .footerDescarga{
-         h3{text-align: center};
+         h3{text-align: left};
          ul{
             li{list-style:map-get($map: $diseñoEstandar, $key:subrayado ); text-decoration: map-get($map: $diseñoEstandar, $key:subrayado );word-spacing: 2px;}
          }};
       .footerContacto{
-            h3{text-align: center};
+            h3{text-align: left};
             ul{
                 li{
                     list-style:map-get($map: $diseñoEstandar, $key:subrayado ); text-decoration: map-get($map: $diseñoEstandar, $key:subrayado );a{
@@ -36,7 +36,7 @@ footer{
                             color: white;}};
                 .mail{
                     margin-right: 5px; font-size: small;};
-                .redesSociales{img{width:5%}}
+                .redesSociales{img{width:8%}}
             }
          }
     };
@@ -49,16 +49,16 @@ footer{
             .footerDerecha {grid-area:logo;};
             .footerCentral{
                 grid-area: centro;display: flex;flex-direction: row;justify-content: space-between;
-                .footerSecciones{
-                    ul{
-                        li{padding: 5px}}};
-                .footerDescarga{
-                    ul{
-                        li{padding: 5px}}};
-                .footerContacto{
-                    ul{
+                .footerSecciones{h3{text-align: center};
+                    ul{text-align: center;
+                    li{padding: 5px}}width:30rem};
+                .footerDescarga{h3{text-align: center;}
+                    ul{text-align: center;
+                        li{padding: 5px}};width:60rem};
+                .footerContacto{h3{text-align: center}
+                    ul{text-align: center;
                         li{
-                            padding: 5px}}}};
+                            padding: 5px};.redesSociales{img{width:20%}}}}};
           .footerAbajo{grid-area:abajo}}
  };
 @media screen and (min-width:1200px) {

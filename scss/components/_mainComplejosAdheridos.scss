@@ -14,28 +14,29 @@ main
  .complejosInscriptosFutbol{@include flexColumn;.complejoInscriptoFutbolUno{@include flexColumn;.imagenComplejo{width: 60%;@extend %diseñoBordesComplejos};ul
  { li 
      {list-style: map-get($map: $diseñoEstandar, $key:subrayado );text-align: left;color:white;margin-top: 10px;font-size: 0.8rem;font-weight: map-get($map: $diseñoEstandar, $key:grosor );img{width:8%}};
-  .imagenTelefono {width: 6%;margin-right: 5px; }
+  .imagenTelefono {width: 6%;margin-right: 5px; };.botonReservar{input{background-color: rgb(7, 228, 7);border-radius: 50%;@extend %diseñoBordesComplejos;width:7rem;color:black;font-weight: map-get($map: $diseñoEstandar, $key:grosor )}}
  }};.complejoInscriptoFutbolDos{@include flexColumn;.imagenComplejo{width: 60%;@extend %diseñoBordesComplejos};ul
  { li 
     {list-style: map-get($map: $diseñoEstandar, $key:subrayado );text-align: left;color:white;margin-top: 10px;font-size: 0.8rem;font-weight: map-get($map: $diseñoEstandar, $key:grosor );img{width:8%}};
- .imagenTelefono {width: 6%;margin-right: 5px; }
+ .imagenTelefono {width: 6%;margin-right: 5px; };.botonReservar{input{background-color: rgb(7, 228, 7);border-radius: 50%;@extend %diseñoBordesComplejos;width:7rem;color:black;font-weight: map-get($map: $diseñoEstandar, $key:grosor )}}
 }};.complejoInscriptoFutbolTres{@include flexColumn;.imagenComplejo{width: 60%;@extend %diseñoBordesComplejos};ul
 { li 
     {list-style: map-get($map: $diseñoEstandar, $key:subrayado );text-align: left;color:white;margin-top: 10px;font-size: 0.8rem;font-weight: map-get($map: $diseñoEstandar, $key:grosor );img{width:8%}};
- .imagenTelefono {width: 6%;margin-right: 5px; }
+ .imagenTelefono {width: 6%;margin-right: 5px; };.botonReservar{input{background-color: rgb(7, 228, 7);border-radius: 50%;@extend %diseñoBordesComplejos;width:7rem;color:black;font-weight: map-get($map: $diseñoEstandar, $key:grosor )}}
 }}};.tenisCentral{text-align: center;h3{font-weight: map-get($map: $diseñoEstandar, $key:grosor);text-shadow: 1px 1px map-get($map: $diseñoEstandar, $key:colorPrincipal);color:white};img{width:10%}};.complejosInscriptosTenis{@include flexColumn;.complejoInscriptoTenisUno{@include flexColumn;.imagenComplejo{width: 60%;@extend %diseñoBordesComplejos};ul
 { li 
     {list-style: map-get($map: $diseñoEstandar, $key:subrayado );text-align: left;color:white;margin-top: 10px;font-size: 0.8rem;font-weight: map-get($map: $diseñoEstandar, $key:grosor );img{width:8%}};
- .imagenTelefono {width: 6%;margin-right: 5px; }
+ .imagenTelefono {width: 6%;margin-right: 5px; };.botonReservar{input{background-color: rgb(7, 228, 7);border-radius: 50%;@extend %diseñoBordesComplejos;width:7rem;color:black;font-weight: map-get($map: $diseñoEstandar, $key:grosor )}}
 }};.complejoInscriptoTenisDos{@include flexColumn;.imagenComplejo{width: 60%;@extend %diseñoBordesComplejos};ul
 { li 
     {list-style: map-get($map: $diseñoEstandar, $key:subrayado );text-align: left;color:white;margin-top: 10px;font-size: 0.8rem;font-weight: map-get($map: $diseñoEstandar, $key:grosor );img{width:8%}};
- .imagenTelefono {width: 6%;margin-right: 5px; }
+ .imagenTelefono {width: 6%;margin-right: 5px; };.botonReservar{input{background-color: rgb(7, 228, 7);border-radius: 50%;@extend %diseñoBordesComplejos;width:7rem;color:black;font-weight: map-get($map: $diseñoEstandar, $key:grosor )}}
 }};.complejoInscriptoTenisTres{@include flexColumn;.imagenComplejo{width: 60%;@extend %diseñoBordesComplejos};ul
 { li 
     {list-style: map-get($map: $diseñoEstandar, $key:subrayado );text-align: left;color:white;margin-top: 10px;font-size: 0.8rem;font-weight: map-get($map: $diseñoEstandar, $key:grosor );img{width:8%}};
- .imagenTelefono {width: 6%;margin-right: 5px; }
-}}};.formularioInscripcion{ 
+ .imagenTelefono {width: 6%;margin-right: 5px;};.botonReservar{input{background-color: rgb(7, 228, 7);border-radius: 50%;@extend %diseñoBordesComplejos;width:7rem;color:black;font-weight: map-get($map: $diseñoEstandar, $key:grosor )}}
+}}};
+.formularioInscripcion{ 
     h3 {text-align: center;margin: 30px; word-spacing: 2px;font-size:1.5rem;color:$colorLetras;text-shadow: 1px 1px map-get($map: $diseñoEstandar, $key:colorEstandar );font-weight: map-get($map: $diseñoEstandar, $key:grosor );};margin: 5px; fieldset {@extend %diseñoBordesComplejos; legend {text-align: center;font-weight:map-get($map: $diseñoEstandar, $key:grosor );color:white;margin: 10px;text-shadow: 1px 1px map-get($map: $diseñoEstandar, $key:colorPrincipal );}; label {color:white;font-size:0.8rem;margin: 5px;text-align: center;align-items: center;text-align: center;font-weight:map-get($map: $diseñoEstandar, $key:grosor );margin: 10px;text-shadow: 0.5px 0.5px map-get($map: $diseñoEstandar, $key:colorPrincipal );}; input {margin-bottom: 3px;};.botonesFormulario {margin: 10px;}}}
 };
 @media screen and (min-width:600px)

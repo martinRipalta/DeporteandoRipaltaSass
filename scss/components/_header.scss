@@ -8,7 +8,7 @@ header{grid-area:header;background: linear-gradient(90deg, $colorFondoUno 20%, $
     .row{
         nav{
              .container-fluid{
-                 display: grid;grid-template-columns: 0.5fr 3fr 0.1fr;grid-template-areas: "img h1 desplegable";align-items: center;text-align: center;justify-content: space-between; background: linear-gradient(90deg, $colorFondoUno 20%, $colorFondoDos 40%, $colorFondoTres 75%, $colorFondoCuatro 100%);@extend %diseñoBordes;
+                 display: grid;grid-template-columns: 0.5fr 3fr 0.1fr;grid-template-areas: "img h1 desplegable";align-items: center;text-align: center;justify-content: space-between; background: linear-gradient(90deg, $colorFondoUno 5%, $colorFondoDos 20%, $colorFondoTres 75%, $colorFondoCuatro 100%);@extend %diseñoBordes;
                  a{
                      img{width: 85%;grid-area: img;}
                    };
