@@ -28,6 +28,10 @@ horarioReserva.splice(0,4)
 let fechaReserva = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31];
 let mesReserva = [ Enero, Febrero, Marzo, Abril,Mayo,Junio,Julio,Agosto,Septiembre,Octubre,Noviembre,Diciembre]
 let añoReserva = [ 2022,2023,2024,2025]
+let pais= [Argentina, Brasil, Peru, Chile]
+const deporte=[Futbol, Tenis]
+while (deporte==Futbol){establecimientosFutbol();break}
+while (deporte==Tenis){establecimientosTenis();break}
 let reserva = nombreRegistro.concat (diaReserva,fechaReserva,mesReserva,añoReserva,horarioReserva); alert("La reserva se registró para"+" "+reserva)
 //Metodos de Busqueda y Filtrado
 const terrenoyPrecioFutbol=[{nombre:establecimientoFutbolUno.nombreEstablecimiento(),precio:5000,terreno: "Piso Baldosa"},{nombre:establecimientoFutbolDos.nombreEstablecimiento(),precio:8000,terreno:"Cesped Sintetico"},{nombre:establecimientoFutbolTres.nombreEstablecimiento(),precio:11000,terreno: "Cesped Sintetico"}];
@@ -41,3 +45,9 @@ const precioEstablecimientoFutbol=terrenoyPrecioFutbol.filter((el)=>el.precio==5
 const terrenoEstablecimientoFutbol=terrenoyPrecioFutbol.filter((el)=>el.terreno=="Cesped Sintetico");
 console.log(precioEstablecimientoFutbol);
 console.log(terrenoEstablecimientoFutbol);
+
+//DOM
+//agregando Nodos
+let fecha=document.createElement("div")
+fecha.innerHTML= <div> <label for="Fecha de Reserva"> Fecha de Reserva</label>
+<input type="number" name="Fecha de Reserva" placeholder="Completa la fecha que quieres reservar"> </input> </div>
