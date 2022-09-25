@@ -48,6 +48,51 @@ console.log(terrenoEstablecimientoFutbol);
 
 //DOM
 //agregando Nodos
+let dia=document.createElement("div")
+dia.innerHTML= <div> <label for="Dia de Reserva"> Dia de Reserva</label>
+<input id="input" type="text" name="Dia de Reserva" placeholder="Completa el día que quieres reservar"> </input> </div>
+document.completarFormulario.appenChild(dia)
+
 let fecha=document.createElement("div")
 fecha.innerHTML= <div> <label for="Fecha de Reserva"> Fecha de Reserva</label>
-<input type="number" name="Fecha de Reserva" placeholder="Completa la fecha que quieres reservar"> </input> </div>
+<input id="input" type="number" name="Fecha de Reserva" placeholder="Completa la fecha que quieres reservar"> </input> </div>
+document.completarFormulario.appenChild(fecha)
+
+let mes=document.createElement("div")
+mes.innerHTML= <div> <label for="Mes de Reserva"> Mes de Reserva</label>
+<input id="input" type="text" name="Mes de Reserva" placeholder="Completa el mes que quieres reservar"> </input> </div>
+document.completarFormulario.appenChild(mes)
+
+let año=document.createElement("div")
+año.innerHTML= <div> <label for="Año de Reserva"> Año de Reserva</label>
+<input id="input" type="number" name="Año de Reserva" placeholder="Completa el año que quieres reservar"> </input> </div>
+document.completarFormulario.appenChild(año)
+
+let hora=document.createElement("div")
+hora.innerHTML= <div> <label for="Hora de Reserva"> Hora de Reserva</label>
+<input id="input" type="number" name="Hora de Reserva" placeholder="Completa la hora que quieres reservar"> </input> </div>
+document.completarFormulario.appenChild(hora)
+
+let deportes=document.createElement("div")
+deportes.innerHTML= <div> <label for="Deporte que quieres reservar"> Deporte a reservar</label>
+<input id="input" type="text" name="Deporte a Reservar" placeholder="Completa el deporte que quieres reservar"> </input> </div>
+document.completarFormulario.appenChild(deportes)
+
+let establecimiento=document.createElement("div")
+establecimiento.innerHTML= <div> <label for="Establecimiento que quieres reservar"> Establecimiento a reservar</label>
+<input id="input" type="text" name="Establecimiento a Reservar" placeholder="Completa el establecimiento donde quieres reservar"> </input> </div>
+document.completarFormulario.appenChild(establecimiento)
+
+//modificando nodos
+let h3=document.getElementById("h3")
+h3.innerText="FORMULARIO PARA RESERVAS"
+let legend=document.getElementById("legend")
+legend.innerText="Completá el formulario y Reservá en tu establecimiento deportivo favorito con Deporteando"
+
+//Incorporando eventos
+let miFormulario=document.getElementsByClassName("botonesFormulario")
+miFormulario.addEventListener("submit",formularioValidado)
+function formularioValidado(e){e.preventDefault();console.log("Felicitaciones, el Formulario de Reserva se ha ingresado correctamente. Te estará llegando un correo electrónico con el detalle de la reserva.")}
+
+let tipeando=document.getElementById("input")
+tipeando.addEventListener('input',()=>{console.log(tipeando.value)})
