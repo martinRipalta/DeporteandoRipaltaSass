@@ -96,3 +96,25 @@ function formularioValidado(e){e.preventDefault();console.log("Felicitaciones, e
 
 let tipeando=document.getElementById("input")
 tipeando.addEventListener('input',()=>{console.log(tipeando.value)})
+
+//Almacenar Datos STORAGE Y JSON
+localStorage.setItem('recibida','¡Bienvenido a Deporteando')
+
+const establecimientosFutbolEnJSON=JSON.stringify(establecimientosFutbol);
+const establecimientosTenisEnJSON=JSON.stringify(establecimientosTenis);
+localStorage.setItem("establecimientosFut",establecimientosFutbolEnJSON);
+localStorage.setItem("establecimientosTen",establecimientosTenisEnJSON);
+
+let dayJSON=JSON.stringify(día);
+let sportJSON=JSON.stringify(deportes);
+let calendarJSON=JSON.stringify(fecha);
+let monthJSON=JSON.stringify(mes);
+let yearJSON=JSON.stringify(año);
+
+sessionStorage.setItem("dia",dayJSON);
+sessionStorage.setItem("deportes",sportJSON);
+sessionStorage.setItem("fecha",calendarJSON);
+sessionStorage.setItem("mes",monthJSON);
+sessionStorage.setItem("año",yearJSON);
+
+
