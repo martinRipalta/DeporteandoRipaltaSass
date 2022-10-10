@@ -1,8 +1,8 @@
 //Variables
 let nombreRegistro = prompt ("Ingrese su nombre y Apellido");alert("Bienvenido"+" "+nombreRegistro+" "+"a Deporteando");
 let edadRegistro = prompt ("Ingrese su edad")
-//Ciclos
-while(edadRegistro<=17){alert("Debes ser mayor de edad para reservar en Deporteando");edadRegistro = prompt ("Ingrese Nuevamente su edad");break};
+//Ciclos con Operador Ternario
+edadRegisto <=17 ? alert("Debes ser mayor de edad para reservar en Deporteando"):prompt ("Ingrese Nuevamente su edad");
 for(edadRegistro>17;edadRegistro<=99;edadRegistro){alert("Felicitaciones ya puedes reservar en cualquier establecimiento adherido a Deporteando");break};
 //Funciones Esenciales
 let montoReserva=(montoEstablecimiento,montoIva,comisionDeporteando)=> montoEstablecimiento+montoIva+montoDeporteando
@@ -11,6 +11,8 @@ const montoDeporteando= a => montoIva*0.2
 let montoEstablecimiento=10000
 
 class establecimientosDeportivos{constructor(nombreEstablecimiento,domicilio,ciudad,pais,telefono){this.nombreEstablecimiento=nombreEstablecimiento;this.domicilio=domicilio;this.ciudad=ciudad;this.pais=pais;this.telefono=telefono}}
+//Desestructuración 
+const {nombreEstablecimiento,domicilio,ciudad,pais,telefono}= establecimientosDeportivos
 const establecimientoFutbolUno=new establecimientosDeportivos("Don Balon","Calle Falsa 123","Monte Castro","Argentina","1122334455")
 const establecimientoFutbolDos= new establecimientosDeportivos("Homero Futbol","Calle Viva 123","Villa Luro","Argentina","1122234456")
 const establecimientoTenisUno=new establecimientosDeportivos("Match Point","Calle Azul 123","Belgrano","Argentina","1124234487")
@@ -28,7 +30,7 @@ horarioReserva.splice(0,4)
 let fechaReserva = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31];
 let mesReserva = [ Enero, Febrero, Marzo, Abril,Mayo,Junio,Julio,Agosto,Septiembre,Octubre,Noviembre,Diciembre]
 let añoReserva = [ 2022,2023,2024,2025]
-let pais= [Argentina, Brasil, Peru, Chile]
+let país= [Argentina, Brasil, Peru, Chile]
 const deporte=[Futbol, Tenis]
 while (deporte==Futbol){establecimientosFutbol();break}
 while (deporte==Tenis){establecimientosTenis();break}
@@ -91,9 +93,6 @@ legend.innerText="Completá el formulario y Reservá en tu establecimiento depor
 
 //Incorporando eventos
 let miFormulario=document.getElementsByClassName("botonesFormulario")
-miFormulario.addEventListener("submit",formularioValidado)
-function formularioValidado(e){e.preventDefault();console.log("Felicitaciones, el Formulario de Reserva se ha ingresado correctamente. Te estará llegando un correo electrónico con el detalle de la reserva.")}
-
 let tipeando=document.getElementById("input")
 tipeando.addEventListener('input',()=>{console.log(tipeando.value)})
 
@@ -117,4 +116,13 @@ sessionStorage.setItem("fecha",calendarJSON);
 sessionStorage.setItem("mes",monthJSON);
 sessionStorage.setItem("año",yearJSON);
 
-
+//Uso de Libreria Toastify
+miFormulario.addEventListener('submit',()=>{Toastify({
+    text: "Felicitaciones, el Formulario de Reserva se ha ingresado correctamente. Te estará llegando un correo electrónico con el detalle de la reserva.",
+    duration: 3000,
+    destination: "https://index.html",
+    style: {
+      background: "linear-gradient(to right, #00b09b, #96c93d)",
+    },
+    onClick: function(){} // Callback after click
+  }).showToast();})
